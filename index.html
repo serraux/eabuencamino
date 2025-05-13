@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/faviconea.png" type="image/x-icon">
+
+  <title>EABuenCamino - Terapia y Bienestar</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS (opcional) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#F8F4E3] text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-[#78ACCF] px-8 py-4 flex items-center justify-evenly">
+    <!-- Logo + Nombre -->
+    <div class="flex items-center space-x-4 ">
+      <img src="images/logo.svg" alt="Logo" class="h-20 w-20 " />
+      <div class="text-white">
+        <h1 class="text-2xl font-light leading-tight">Ea,<br><span class="font-medium">BuenCamino</span></h1>
+        <p class="text-sm">Guía terapéutica para el bienestar integral</p>
+      </div>
+    </div>
+  
+    <!-- Navegación -->
+    <nav class="bg-[#F8F4E3] px-6 py-2 rounded shadow-sm ">
+      <ul class="flex space-x-6 divide-x divide-[#ccc] text-[#336699] text-sm font-medium">
+        <li><a href="#about" class="px-3 hover:underline">About Us</a></li>
+        <li><a href="#services" class="px-3 hover:underline">Services</a></li>
+        <li><a href="#team" class="px-3 hover:underline">Team</a></li>
+        <li><a href="#contact" class="px-3 hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+ <!-- Sección de imagen destacada con texto encima -->
+<section class="w-full py-4 px-4 flex justify-center mb-auto relative">
+  <!-- Contenedor de imagen -->
+  <div class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 relative">
+    
+    <!-- Imagen -->
+    <img 
+      src="images/png/mainBanner.png" 
+      alt="Camino simbólico de EaBuenCamino" 
+      class="w-full h-auto"
+    />
+
+    <!-- Texto superpuesto -->
+    <div class="absolute inset-0 flex items-center justify-center px-4">
+      <h2 class="text-[#336699] text-xl md:text-3xl font-semibold text-center bg-black/5 px-6 py-3 rounded-lg shadow-md">
+        Cada paso cuenta, Cada cambio nace dentro.
+      </h2>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+  <!-- Hero Section Listo para un cambio -->
+  <section 
+  class="relative bg-[#F8F4E3] text-white  px-4 flex justify-center  w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto h-32 md:h-40"
+  style="background-image: url('images/svg/wave-bg.svg'); background-size: contain;background-repeat: no-repeat; background-position: center; ">
+  
+  <div class="  flex justify-center  items-center md:w-full  ">
+    <h2 class="pl-4 pr-8  text-sm md:text-3xl font-semibold">¿Listo para un cambio?</h2>
+    <a 
+      href="#contact" 
+      class="inline-block bg-[#336699] hover:bg-[#2b5c88] text-white text-sm md:text-base font-medium px-6 py-3 rounded-full shadow transition"
+    >
+      Reserva consulta gratis
+    </a>
+  </div>
+</section>
+<!--Yellow Brake Line -->
+<section
+class="relative bg-[#F8F4E3] text-white  px-4 flex justify-center  w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto h-16 md:h-24"
+  style="background-image: url('images/svg/yellow-br-line.svg'); background-size: contain;background-repeat: no-repeat; background-position: center; ">  
+</section>
+
+<!-- Sección de imagen water mountain banner -->
+<section class="relative w-full bg-[#F8F4E3] py-12 px-4">
+  
+  <!-- Contenedor del texto -->
+  <div class="relative z-10 max-w-4xl mx-auto  rounded-lg p-6 text-center text-[#336699] shadow-md md:z-10">
+    <p class="text-lg md:text-3xl font-medium font-bold">
+      A veces, el reflejo que se ve en la superficie calma no muestra todo lo que se lleva dentro 
+    </p>
+  </div>
+
+  <!-- Contenedor de la imagen que se solapa con el texto -->
+  <div class="-mt-10 relative z-0 max-w-4xl mx-auto">
+    <img 
+      src="images/png/mountain-water-banner.png" 
+      alt="Imagen de conexión emocional" 
+      class="w-full h-auto rounded-lg shadow-lg"
+    />
+  </div>
+
+</section>
+
+<!-- Seccion de  -->
+ <!-- Sección raíz con fondo -->
+<section 
+class="w-full py-12 px-4 bg-cover bg-center"
+style="background-image: url('images/jpg/fondo-seccion.jpg');">
+
+<!-- Capa blanca semitransparente -->
+<section class="relative md:w-[80%] mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden">
+  
+  <!-- SVG izquierda -->
+  <img 
+    src="images/svg/left-deco.svg" 
+    alt="Decoración izquierda" 
+    class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
+  />
+
+  <!-- SVG derecha -->
+  <img 
+    src="images/svg/right-deco.svg" 
+    alt="Decoración derecha" 
+    class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
+  />
+
+  <!-- Contenido principal -->
+  <div class="relative z-10 max-w-4xl top-0 mx-auto  rounded-xl md:p-6  text-center ">
+    
+    <h2 class="text-2xl font-semibold text-[#336699] py-8 ">¿Te sientes agobiado?</h2>
+    
+    <img src="images/svg/decor-element.svg" alt="Decorativo" class="mx-auto w-36 h-2" />
+    
+    <p class="text-gray-700 max-w-xl mx-auto w-[60%] py-12 md:py-24 md:w-[40%] md:text-xl">
+      Las situaciones de la vida —presiones laborales, relaciones tensas o inseguridades personales— a 
+      veces pueden volverse abrumadoras, creando una carga que parece imposible de manejar por uno mismo.
+    </p>
+    
+    <img src="images/png/deco-overwhelmed.png" alt="Imagen 1" class="mx-auto my-16 max-w-xs size-[30%] md:size-[20%] md:py-16" />
+    
+    <h2 class="text-xl md:text-2xl font-semibold text-[#336699] py-8 w-[60%] mx-auto">¿Estás atravesando dificultades imprevistas?</h2>
+    
+    <img src="images/svg/decor-element.svg" alt="Ícono" class="mx-auto w-36 h-2" />
+
+    <p class="text-gray-700 max-w-xl mx-auto w-[60%] py-12 md:py-12 md:w-[60%] md:text-xl">
+      La pérdida de empleo, los problemas de salud o las grandes transiciones de vida pueden traer obstáculos
+      inesperados. Estos desafíos a menudo parecen insuperables cuando se enfrentan sin apoyo.
+    </p>
+    
+    <img src="images/png/deco-unexp-setbacks.png" alt="cascada de agua" class="mx-auto mb-8 max-w-xs size-[30%] md:size-[20%]" />
+
+  </div>
+</section>
+
+<section class="relative md:w-[80%] mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden">
+  
+  <!-- SVG izquierda -->
+  <img 
+    src="images/svg/left-deco.svg" 
+    alt="Decoración izquierda" 
+    class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
+  />
+
+  <!-- SVG derecha -->
+  <img 
+    src="images/svg/right-deco.svg" 
+    alt="Decoración derecha" 
+    class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
+  />
+
+  <!-- Contenido principal -->
+  <div class="relative z-10 max-w-4xl top-0 mx-auto  rounded-xl md:p-6  text-center ">
+    
+    <h2 class="text-2xl font-semibold text-[#336699] py-8 ">¿Has decidido buscar apoyo?</h2>
+    
+    <img src="images/svg/decor-element.svg" alt="Decorativo" class="mx-auto w-36 h-2" />
+    
+    <p class="text-gray-700 max-w-xl mx-auto w-[60%] py-12 md:py-24 md:w-[40%] md:text-xl">
+      A veces existe un conflicto interno sobre si buscar ayuda para resolver los problemas de la vida real. 
+      Este es un momento crucial, un punto de inflexión.
+    </p>
+    
+    <img src="images/png/deco-find-help.png" alt="Buscando ayuda" class="mx-auto my-16 max-w-xs size-[40%] md:size-[30%] md:py-16" />
+    
+    <h2 class="text-xl md:text-2xl font-semibold text-[#336699] py-8 w-[60%] mx-auto">Encuentra el apoyo que necesitas en tu camino</h2>
+    
+    <img src="images/svg/decor-element.svg" alt="Ícono" class="mx-auto w-36 h-2" />
+
+    <p class="text-gray-700 max-w-xl mx-auto w-[80%] py-12 md:py-12 md:w-[80%] md:text-xl">
+      La consejería te ofrece un acompañamiento confiable en el camino frente a los desafíos de la vida, 
+      brindando orientación y comprensión cuando la ruta se vuelve incierta. Combinamos empatía con 
+      perspectiva profesional para ayudarte a encontrar claridad, fortaleza y una nueva dirección.
+    </p>
+    
+    
+  </div>
+</section>
+
+
+</section>
+
+
+ 
+  
+  
+  <section class="w-full py-12 px-4 bg-[#336699] relative flex justify-center items-center">
+  
+  <!-- Imagen SVG de fondo -->
+  <img 
+    src="images/svg/sp2-hourglass.svg" 
+    alt="Decoración central" 
+    class="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto"
+  />
+
+  <!-- Imagen encima, centrada y alineada hacia la parte inferior -->
+  <img 
+    src="images/png/new-horizon.png" 
+    alt="Imagen nuevo horizonte" 
+    class="absolute bottom-16 size-24 md:bottom-16 md:size-32 mx-auto z-10 max-w-[200px]"
+  />
+</section>
+<!-- Hero Section  -->
+  <section class="text-center py-16 px-4 bg-gradient-to-r from-blue-100 to-purple-100">
+    <h1 class="text-4xl font-bold text-blue-800 mb-4">Ready for a Change?</h1>
+    <p class="text-lg text-gray-700 mb-6">
+      Shifting Life Perspectives to Finding Balance
+    </p>
+    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+      Book a Free Consultation
+    </a>
+  </section>
+
+  <!-- Aquí vendrán las demás secciones: contenido, servicios, equipo, contacto... -->
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
