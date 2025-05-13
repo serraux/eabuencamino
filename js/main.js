@@ -9,3 +9,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+  
+
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  // Mostrar/Ocultar menú al hacer clic en el botón
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+
+  // Cerrar el menú al hacer clic en cualquier enlace dentro del menú
+  const menuLinks = menu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 768) {
+        menu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      }
+    });
+  });
+
+
+
