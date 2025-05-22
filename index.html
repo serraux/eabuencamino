@@ -61,37 +61,41 @@
 <!--  -->
 
 <section class="w-full py-4 px-4 flex justify-center mb-auto relative">
-  <div class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 relative">
-    
-    <!-- Imagen -->
-    <img 
-      src="images/png/mainBanner.png" 
-      alt="Camino simbólico de EaBuenCamino" 
-      class="w-full h-auto"
-    />
+  <div class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 relative overflow-hidden">
 
-    <!-- Texto superpuesto en dos columnas -->
-    <div class="absolute inset-0 flex items-start justify-between pt-8 md:pt-24 px-4
-    
-    
-    
-    
-    ">
-      
-      <!-- Lado izquierdo -->
-      <div class=" px-4 py-3 rounded-lg shadow-md text-[#4A4A4A] text-left font-semibold text-xl md:text-3xl leading-">
+    <!-- Carrusel de imágenes -->
+    <div id="carousel" class="relative w-full h-auto z-0">
+      <img src="images/png/mainBanner1.png" class="carousel-img w-full h-auto block" />
+      <img src="images/png/mainBanner2.png" class="carousel-img w-full h-auto hidden" />
+      <img src="images/png/mainBanner3.png" class="carousel-img w-full h-auto hidden" />
+    </div>
+
+    <!-- Capa transparente blanca al 80% -->
+    <div class="absolute inset-0 bg-white/60 z-10"></div>
+
+    <!-- Texto superpuesto (encima de la capa) -->
+    <!-- <div class="absolute inset-0 flex items-start justify-between pt-8 md:pt-24 px-4 z-20">
+      <div class="px-4 py-3 rounded-lg shadow-md text-[#4A4A4A] text-left font-semibold text-xl md:text-3xl leading-snug">
         Cada<br>Paso<br>Cuenta
       </div>
-
-      <!-- Lado derecho -->
-      <div class=" px-4 py-3 rounded-lg shadow-md text-[#4A4A4A] text-right font-semibold text-xl md:text-3xl leading-snug">
+      <div class="px-4 py-3 rounded-lg shadow-md text-[#4A4A4A] text-right font-semibold text-xl md:text-3xl leading-snug">
         Cada<br>Cambio<br>Nace dentro
       </div>
+    </div> -->
 
+    <!-- Botones -->
+    <div class="absolute inset-0 flex items-center justify-between px-4 z-20">
+      <button id="prevBtn" class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full">
+        ‹
+      </button>
+      <button id="nextBtn" class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full">
+        ›
+      </button>
     </div>
-    
+
   </div>
 </section>
+
 
 
 <!--  -->

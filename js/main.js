@@ -55,3 +55,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeItems.forEach(item => observer.observe(item));
   });
+
+  //Javascript para controlar el carrusell
+  const images = document.querySelectorAll('.carousel-img');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  let current = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.toggle('hidden', i !== index);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    current = (current - 1 + images.length) % images.length;
+    showImage(current);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    current = (current + 1) % images.length;
+    showImage(current);
+  });
+
+  // Optional: auto-advance every 5s
+  setInterval(() => {
+   nextBtn.click();
+  }, 5000);
