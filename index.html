@@ -277,7 +277,7 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
            style="background-image: url('images/svg/desktop-bg-1.svg'); z-index: 0;"></div>
 
       <!-- Columna izquierda -->
-      <div class="relative z-10 w-full md:w-1/2 flex flex-col justify-start gap-4">
+      <div class="relative z-10 w-full md:w-2xl flex flex-col justify-start gap-4">
         <!-- Título -->
         <h1 class="text-2xl md:text-3xl font-semibold text-left md:text-left">Terapia Individual</h1>
 
@@ -295,7 +295,14 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
       </div>
 
       <!-- Columna derecha vacía o decorativa si lo deseas -->
-      <div class="relative z-10 w-full md:w-1/2"></div>
+      <div class="relative z-10 w-full md:w-2xl">
+      <!-- Imagen decorativa visible solo en escritorio -->
+        <img 
+          src="images/png/terapiaInd.png" 
+          alt="Imagen persona Terapia Individual "
+          class="absolute hidden md:block bottom-0 right-0 w-[420px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        />
+      </div>
       
 
     </div>
@@ -307,7 +314,7 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
  <div class="w-full md:w-[80%] mx-auto">
 
     <!-- Contenedor hijo2 con altura completa -->
-    <div class="relative bg-no-repeat bg-cover text-white p-6  flex flex-col md:flex-row justify-between"
+    <div class="relative bg-no-repeat bg-cover text-white p-6  flex flex-col md:flex-row-reverse justify-between"
          style="background-image: url('images/svg/mobile-bg-2.svg');">
 
       <!-- Fondo SVG para escritorio -->
@@ -315,7 +322,7 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
            style="background-image: url('images/svg/desktop-bg-3.svg'); z-index: 0;"></div>
 
       <!-- Columna izquierda -->
-      <div class="relative z-10 w-full  flex flex-col justify-start gap-4">
+      <div class="relative z-10 w-full  flex flex-col justify-end gap-4">
         <!-- Título -->
         <h1 class="text-2xl md:text-3xl font-semibold text-right md:text-right">Terapia Familiar y Parejas</h1>
 
@@ -323,6 +330,13 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
         <p class="text-xl md:text-2xl text-right pt-2 md:text-right max-w-md ml-auto">
           Creamos un espacio de diálogo y conexión donde las relaciones pueden fortalecerse a través de la comunicación abierta, el respeto mutuo y el entendimiento compartido.
         </p>
+
+        <!-- Imagen solo en móvil -->
+        <img 
+          src="images/png/terapiaFamMob.png" 
+          alt="Imagen móvil Terapia Familiar" 
+          class="block md:hidden  ml-auto"
+        />
 
         <!-- Botón -->
         <div class="text-right md:text-right pt-16 md:pt-8">
@@ -333,7 +347,15 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
       </div>
 
       <!-- Columna derecha vacía o decorativa si lo deseas -->
-      <!-- <div class="relative z-10 w-full md:w-1/2"></div> -->
+      <div class="relative z-10 w-full md:w-2xl">
+
+<img 
+          src="images/png/terapiaFam.png" 
+          alt="Imagen persona Terapia Individual "
+          class="absolute hidden md:block bottom-0 right-0 w-[420px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        />
+
+      </div>
       
 
     </div>
@@ -354,7 +376,7 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
            style="background-image: url('images/svg/desktop-bg-1.svg'); z-index: 0;"></div>
 
       <!-- Columna izquierda -->
-      <div class="relative z-10 w-full md:w-1/2 flex flex-col justify-start gap-4">
+      <div class="relative z-10 w-full md:w-2xl flex flex-col justify-start gap-4 ">
         <!-- Título -->
         <h1 class="text-2xl md:text-3xl font-semibold text-left md:text-left">Terapia de Autodescubrimiento</h1>
 
@@ -372,8 +394,14 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
       </div>
 
       <!-- Columna derecha vacía o decorativa si lo deseas -->
-      <div class="relative z-10 w-full md:w-1/2"></div>
-      
+      <div class="relative z-10 w-full md:w-2xl">
+      <!-- Imagen decorativa visible solo en escritorio -->
+        <img 
+          src="images/png/terapiaAuto.png" 
+          alt="Imagen persona Terapia Autodescubrimiento "
+          class="absolute hidden md:block bottom-0 right-0 w-[420px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        />
+      </div>
 
     </div>
   </div>

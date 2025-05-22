@@ -37,4 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+//fade-in iamen individual therapy
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeItems = document.querySelectorAll('.fade-on-scroll');
 
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-4');
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          observer.unobserve(entry.target); // se activa solo una vez
+        }
+      });
+    }, {
+      threshold: 0.2 // activa cuando el 20% del elemento es visible
+    });
+
+    fadeItems.forEach(item => observer.observe(item));
+  });
