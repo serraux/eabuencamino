@@ -28,3 +28,7 @@
 }
 
 
+/*Estilo de la imagen en seccion about us*/
+.custom-bottom-round {
+  clip-path: ellipse(100% 90% at 50% 0%);
+}
