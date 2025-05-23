@@ -60,8 +60,11 @@
 
 <!--  -->
 
-<section class="w-full py-4 px-4 flex justify-center mb-auto relative">
-  <div class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 relative overflow-hidden">
+<section class="w-full py-4 flex justify-center mx-auto relative  ">
+
+
+
+ <div class="w-full md:w-[70%] lg:w-[70%] xl:w-[70%] max-w-[80%] mx-auto relative overflow-hidden">
 
     <!-- Carrusel de imágenes -->
     <div id="carousel" class="relative w-full h-auto z-0">
@@ -70,8 +73,8 @@
       <img src="images/png/mainBanner3.png" class="carousel-img w-full h-auto hidden" />
     </div>
 
-    <!-- Capa transparente blanca al 80% -->
-    <div class="absolute inset-0 bg-white/60 z-10"></div>
+    <!-- Capa transparente blanca al 50% -->
+    <div class="absolute inset-0 bg-white/30 z-10"> </div>
 
     <!-- Texto superpuesto (encima de la capa) -->
     <!-- <div class="absolute inset-0 flex items-start justify-between pt-8 md:pt-24 px-4 z-20">
@@ -94,33 +97,43 @@
     </div>
 
   </div>
+ 
 </section>
 
 
 
 <!--  -->
 
+<section class="h-40 w-full md:w-[70%] lg:w-[70%] xl:w-[70%] max-w-[80%] mx-auto justify-center relative overflow-hidden">
+  <!-- Imagen de fondo -->
+  <div class="absolute inset-0 bg-no-repeat bg-cover bg-center z-0 mx-auto h-40"
+       style="background-image: url('images/svg/wave-bg.svg');">
+  </div>
 
-
-
-  <!-- Hero Section Listo para un cambio -->
-  <section 
-  class="relative bg-[#F8F4E3] text-white  px-4 flex justify-center  w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto h-32 md:h-40"
-  style="background-image: url('images/svg/wave-bg.svg'); background-size: contain;background-repeat: no-repeat; background-position: center; ">
+  <!-- Contenedor principal -->
+  <div class="w-full  h-full relative z-2">
   
-  <div class="  flex justify-center  items-center md:w-full  gap-2 md:gap-4 flex-wrap md:flex-nowrap">
-    <h2 class=" pl-1 pr-1 md:pl-12 md:pr-2  text-sm md:text-3xl font-semibold ">¿Listo para un cambio?</h2>
+    <div class=" z-50  h-full flex justify-center md:justify-around items-center  w-full  mx-auto gap-2 md:gap-4 flex-wrap md:flex-nowrap">
+    <h2 class=" pl-1 pr-1 md:pl-12 md:pr-2 text-[#F8F4E3]  text-sm md:text-3xl font-semibold ">¿Listo para un cambio?</h2>
     <a 
       href="#contact" 
-      class="inline-block bg-[#336699] hover:bg-[#2b5c88] text-white text-sm md:text-base font-medium px-2 md:px-6 py-2 md:py-3 rounded-full shadow transition whitespace-nowrap"
+      class="inline-block bg-[#336699] hover:bg-[#2b5c88] text-[#F8F4E3] text-sm md:text-xl font-medium px-2 md:px-6 py-2 md:py-3 rounded-full shadow transition whitespace-nowrap"
     >
       Reserva consulta gratis
     </a>
   </div>
+
+
+
+  </div>
 </section>
+
+
+
+  
 <!--Yellow Brake Line -->
 <section
-class="relative bg-[#F8F4E3] text-white  px-4 flex justify-center  w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto h-16 md:h-24"
+class="relative bg-[#F8F4E3] text-white  px-4 flex justify-center  w-full  md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto h-16 md:h-40"
   style="background-image: url('images/svg/yellow-br-line.svg'); background-size: contain;background-repeat: no-repeat; background-position: center; ">  
 </section>
 
@@ -152,18 +165,18 @@ class="w-full py-12 px-4 bg-cover bg-center"
 style="background-image: url('images/jpg/fondo-seccion.jpg');">
 
 <!-- Capa blanca semitransparente -->
-<section class="relative md:w-[80%] mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden">
+<section class="relative md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden">
   
   <!-- SVG izquierda -->
   <img 
-    src="images/svg/left-deco.svg" 
+    src="images/svg/left-deco-arrow.svg" 
     alt="Decoración izquierda" 
     class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
   />
 
   <!-- SVG derecha -->
   <img 
-    src="images/svg/right-deco.svg" 
+    src="images/svg/right-deco-arrow.svg" 
     alt="Decoración derecha" 
     class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
   />
@@ -196,18 +209,18 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
   </div>
 </section>
 
-<section class="relative md:w-[80%] mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden">
+<section class="relative md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden">
   
   <!-- SVG izquierda -->
   <img 
-    src="images/svg/left-deco.svg" 
+    src="images/svg/left-deco-arrow.svg" 
     alt="Decoración izquierda" 
     class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
   />
 
   <!-- SVG derecha -->
   <img 
-    src="images/svg/right-deco.svg" 
+    src="images/svg/right-deco-arrow.svg" 
     alt="Decoración derecha" 
     class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none" 
   />
@@ -247,9 +260,10 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
  
   
   
-  <section class="w-full py-12 px-4 bg-[#336699] relative flex justify-center items-center">
+  <section class="py-12 px-4  ">
   
-  <!-- Imagen SVG de fondo -->
+<div class="w-full max-w-[70%] mx-auto relative flex justify-center items-center bg-[#336699]">
+   <!-- Imagen SVG de fondo -->
   <img 
     src="images/svg/sp2-hourglass.svg" 
     alt="Decoración central" 
@@ -260,17 +274,25 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
   <img 
     src="images/png/new-horizon.png" 
     alt="Imagen nuevo horizonte" 
-    class="absolute bottom-16 size-24 md:bottom-16 md:size-32 mx-auto z-10 max-w-[200px]"
+    class="absolute bottom-0  size-24 md:bottom-4 md:size-32 mx-auto z-10 max-w-[200px]"
   />
+  </div>
+
+
+  
+
+
+
+
 </section>
 
 
 <!-- Seccion de servicios -->
  
 
-<section class="w-full bg-cover bg-center px-4 py-12" style="background-image: url('images/jpg/section-background.jpg');">
+<section class="w-full max-w-[70%] mx-auto border bg-cover bg-center  py-12" style="background-image: url('images/jpg/section-background.jpg');">
   <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-<div class="h-[10px] md:w-[80%] mx-auto bg-[#E3BE03]/85"></div>
+<div class="h-[10px] md:w-[70%] mx-auto bg-[#E3BE03]/85"></div>
   <!-- Contenedor hijo 1 -->
   <div class="w-full md:w-[80%] mx-auto">
 
@@ -504,59 +526,71 @@ style="background-image: url('images/jpg/fondo-seccion.jpg');">
 </section>
 
 
-<section class="relative w-full bg-[#E3BE03] py-12 px-4 text-[#336699] overflow-hidden">
-  <!-- Imagen izquierda centrada vertical -->
+<section class="relative w-full bg-[#E3BE03] py-20 overflow-hidden">
+
+  <!-- Imagen izquierda centrada verticalmente -->
   <img 
-    src="images/deco-left.svg" 
+    src="images/svg/left-deco.svg" 
     alt="Decoración izquierda" 
-    class="absolute left-0 top-1/2 -translate-y-1/2 z-0 w-32 md:w-40 pointer-events-none"
+    class="absolute left-0 top-1/6 md:top-1/2 -translate-y-1/2 z-0 w-14 md:w-20 pointer-events-none"
   />
 
-  <!-- Imagen derecha alineada abajo -->
+  <!-- Imagen derecha alineada al fondo -->
   <img 
-    src="images/deco-right.svg" 
+    src="images/svg/right-deco.svg" 
     alt="Decoración derecha" 
-    class="absolute right-0 bottom-0 z-0 w-24 md:w-32 pointer-events-none"
+    class="absolute right-0 bottom-0 z-0 w-20 md:w-32 pointer-events-none"
   />
 
-  <!-- Contenido principal -->
-  <div class="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    
-    <!-- Título -->
-    <div class="flex justify-center md:justify-start">
-      <h2 class="text-2xl font-semibold text-center md:text-left">Contact Us</h2>
+ <!-- NUEVA ESTRUCTURA DE CONTACTO -->
+  <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-stretch gap-4 md:gap-0 mb-12">
+
+    <!-- Columna izquierda: "Contacto" -->
+    <div class="flex items-center  justify-center h-2 md:h-auto md:w-2/4 text-[#336699] text-2xl md:text-4xl font-semibold">
+      Contacto
     </div>
 
-    <!-- Datos de contacto -->
-    <div class="space-y-4 text-sm md:text-base">
-      <div class="flex items-center gap-3">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-2-2h-2a1 1 0 0 0-1 1v1H8V7a1 1 0 0 0-1-1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h2a2 2 0 0 0 2-2V8z"/></svg>
-        <span>hello@eabuencamino.com</span>
-      </div>
+    <!-- Separador azul -->
+    <!-- <div class="bg-[#336699] w-full h-[15px] md:w-[10px] md:h-auto md:my-auto md:h-[80%]"></div> -->
 
-      <div class="flex items-center gap-3">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z"/><path d="M7 7h10v2H7z"/></svg>
+    <!-- Columna derecha: información de contacto -->
+    <div class="flex flex-col justify-center w-full md:border-[#336699]/80 md:border-l-8 md:w-2/4 text-[#336699] font-medium">
+
+      <!-- Teléfono -->
+      <div class="flex items-center justify-center md:pl-6 md:justify-start h-20 border-b border-[#336699]/80 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out">
+        <img src="images/png/telefono.png" alt="Teléfono" class="w-6 h-6 md:w-7 md:h-7 mr-2" />
         <span>(+1) 505-600-1586</span>
       </div>
 
-      <div class="flex items-center gap-3">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13s-7-7.75-7-13a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        <span>3539 THAXTON AVE SE - 87106<br/>Albuquerque - New Mexico</span>
+      <!-- Dirección -->
+      <div class="flex items-center justify-center md:pl-6 md:justify-start h-20 border-b border-[#336699]/80 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out">
+        <img src="images/png/direccion.png" alt="Dirección" class="w-6 h-9 md:w-7 md:h-10 mr-2" />
+        <span>3539 THAXTON AVE SE - 87106, Albuquerque, NM</span>
+      </div>
+
+      <!-- Correo -->
+      <div class="flex items-center justify-center md:pl-6 md:justify-start h-20 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out">
+        <img src="images/png/correo.png" alt="Correo" class="w-8 h-6 md:w-9 md:h-7 mr-2" />
+        <span>hello@eabuencamino.com</span>
       </div>
     </div>
   </div>
+
+ 
+  
 </section>
 
 
 
+
 <!-- Hero Section  -->
-  <section class="text-center py-16 px-4 bg-gradient-to-r from-blue-100 to-purple-100">
-    <h1 class="text-4xl font-bold text-blue-800 mb-4">Ready for a Change?</h1>
+  <section class="text-center py-16 px-4 bg-gradient-to-r from-[#E3BE03] to-[#336699]">
+    <h1 class="text-4xl font-bold text-[#F8F4E3] mb-4">Listo Para Un Cambio?</h1>
     <p class="text-lg text-gray-700 mb-6">
       Shifting Life Perspectives to Finding Balance
     </p>
-    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
-      Book a Free Consultation
+    <a href="#contact" class="bg-[#336699] text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+      Reserva Consulta Gratis
     </a>
   </section>
 

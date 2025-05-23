@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   //Javascript para controlar el carrusell
+ 
   const images = document.querySelectorAll('.carousel-img');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
@@ -68,17 +69,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  prevBtn.addEventListener('click', () => {
-    current = (current - 1 + images.length) % images.length;
-    showImage(current);
-  });
-
-  nextBtn.addEventListener('click', () => {
+  function nextImage() {
     current = (current + 1) % images.length;
     showImage(current);
+  }
+
+  function prevImage() {
+    current = (current - 1 + images.length) % images.length;
+    showImage(current);
+  }
+
+  // Botones
+  prevBtn.addEventListener('click', prevImage);
+  nextBtn.addEventListener('click', nextImage);
+
+  // Autoavance cada 5 segundos
+  setInterval(() => {
+    nextImage();
+  }, 5000);
+
+  // Swipe en móviles
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const carousel = document.getElementById('carousel');
+
+  carousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
   });
 
-  // Optional: auto-advance every 5s
-  setInterval(() => {
-   nextBtn.click();
-  }, 5000);
+  carousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const swipeDistance = touchStartX - touchEndX;
+    const threshold = 50; // Mínima distancia para considerar como swipe
+
+    if (swipeDistance > threshold) {
+      nextImage(); // Swipe izquierdo → siguiente
+    } else if (swipeDistance < -threshold) {
+      prevImage(); // Swipe derecho → anterior
+    }
+  }
+
+  // Mostrar la imagen inicial
+  showImage(current);
+
