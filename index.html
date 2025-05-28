@@ -31,7 +31,14 @@
     <!-- Botón hamburguesa (solo visible en móvil) -->
     <button id="menu-btn" class="text-white md:hidden focus:outline-none z-20">
       <!-- Icono hamburguesa -->
-      <!-- Icono hamburguesa -->
+   
+
+
+
+
+
+
+
 <svg id="icon-open" class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
 </svg>
@@ -44,7 +51,7 @@
 
     <!-- Menú de navegación -->
     <nav id="menu" class="absolute top-full left-0 w-full md:static md:w-auto md:flex md:space-x-6 bg-[#F8F4E3] md:bg-transparent text-[#336699] md:text-white px-6 py-4 md:p-0 hidden md:block shadow-md md:shadow-none z-10">
-      <a href="about.html" class="block py-2 md:py-0 hover:underline">Sobre Nosotross</a>
+      <a href="about.html" class="block py-2 md:py-0 hover:underline">Sobre Nosotros</a>
       <a href="#services" class="block py-2 md:py-0 hover:underline">Servicios</a>
       <a href="#team" class="block py-2 md:py-0 hover:underline">Equipo</a>
       <a href="#contact" class="block py-2 md:py-0 hover:underline">Contacto</a>
@@ -57,8 +64,6 @@
 
  <!-- Sección de imagen destacada con texto encima -->
 
-
-<!--  -->
 
 <section class="w-full py-4 flex justify-center mx-auto relative  ">
 
@@ -73,18 +78,10 @@
       <img src="images/png/mainBanner3.png" class="carousel-img w-full h-auto hidden" />
     </div>
 
-    <!-- Capa transparente blanca al 50% -->
+    <!-- Capa transparente blanca al 20% -->
     <div class="absolute inset-0 bg-white/20 z-10"> </div>
 
-    <!-- Texto superpuesto (encima de la capa) -->
-    <!-- <div class="absolute inset-0 flex items-start justify-between pt-8 md:pt-24 px-4 z-20">
-      <div class="px-4 py-3 rounded-lg shadow-md text-[#4A4A4A] text-left font-semibold text-xl md:text-3xl leading-snug">
-        Cada<br>Paso<br>Cuenta
-      </div>
-      <div class="px-4 py-3 rounded-lg shadow-md text-[#4A4A4A] text-right font-semibold text-xl md:text-3xl leading-snug">
-        Cada<br>Cambio<br>Nace dentro
-      </div>
-    </div> -->
+    
 
     <!-- Botones -->
     <div class="absolute inset-0 flex items-center justify-between px-4 z-20">
@@ -275,7 +272,7 @@ style="">
   <img 
     src="images/png/new-horizon.png" 
     alt="Imagen nuevo horizonte" 
-    class="absolute bottom-0  size-24 md:bottom-4 md:size-32 mx-auto z-10 max-w-[200px]"
+    class="absolute bottom-2  size-20 md:size-20 md:bottom-4 md:size-32 mx-auto z-10 max-w-[200px]"
   />
   </div>
 
@@ -291,11 +288,11 @@ style="">
 <!-- Seccion de servicios -->
  
 
-<section class="w-full md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto border bg-cover bg-center  py-12" style="background-image: url('images/jpg/section-background.jpg'); width: 80%;">
+<section class="w-full md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto border bg-cover bg-center  py-0" style="background-image: url('images/jpg/section-background.jpg'); width: 80%;">
   <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-<div class="h-[10px] md:w-[80%] mx-auto bg-[#E3BE03]/85"></div>
+<div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
   <!-- Contenedor hijo 1 -->
-  <div class="w-full md:w-[80%] mx-auto">
+  <div class="w-full  mx-auto">
 
     <!-- Contenedor hijo1 con altura completa -->
     <div class="relative bg-no-repeat bg-cover text-white p-6  flex flex-col md:flex-row justify-between"
@@ -334,9 +331,9 @@ style="">
       <div class="relative z-10 w-full md:w-2xl">
       <!-- Imagen decorativa visible solo en escritorio -->
         <img 
-          src="images/png/terapiaInd.png" 
+          src="images/png/terapiaIndMov.png" 
           alt="Imagen persona Terapia Individual "
-          class="absolute hidden md:block bottom-0 right-0 w-[420px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          class="absolute hidden md:block bottom-0 right-0 w-[240px]  h-[120px] md:w-[620px] md:h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
         />
       </div>
       
@@ -345,9 +342,9 @@ style="">
   </div>
 
   <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-<div class="h-[10px] md:w-[80%] mx-auto bg-[#E3BE03]/85"></div>
+<div class="h-[10px]  mx-auto bg-[#E3BE03]/85"></div>
 <!-- contenedor hijo 2 -->
- <div class="w-full md:w-[80%] mx-auto">
+ <div class="w-full  mx-auto">
 
     <!-- Contenedor hijo2 con altura completa -->
     <div class="relative bg-no-repeat bg-cover text-white p-6  flex flex-col md:flex-row-reverse justify-between"
@@ -386,9 +383,9 @@ style="">
       <div class="relative z-10 w-full md:w-2xl">
 
 <img 
-          src="images/png/terapiaFam.png" 
+          src="images/png/terapiaFamMob.png" 
           alt="Imagen persona Terapia Individual "
-          class="absolute hidden md:block bottom-0 right-0 w-[420px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          class="absolute hidden md:block bottom-0 left-0 w-[620px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
         />
 
       </div>
@@ -398,12 +395,12 @@ style="">
   </div>
 
   <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-<div class="h-[10px] md:w-[80%] mx-auto bg-[#E3BE03]/85"></div>
+<div class="h-[10px]  mx-auto bg-[#E3BE03]/85"></div>
 
-<!-- Contenedor hijo 1 -->
-  <div class="w-full md:w-[80%] mx-auto">
+<!-- Contenedor hijo 3 -->
+  <div class="w-full  mx-auto">
 
-    <!-- Contenedor hijo1 con altura completa -->
+    <!-- Contenedor hijo3 con altura completa -->
     <div class="relative bg-no-repeat bg-cover text-white p-6  flex flex-col md:flex-row justify-between"
          style="background-image: url('images/svg/mobile-bg-1.svg');">
 
@@ -440,9 +437,9 @@ style="">
       <div class="relative z-10 w-full md:w-2xl">
       <!-- Imagen decorativa visible solo en escritorio -->
         <img 
-          src="images/png/terapiaAuto.png" 
+          src="images/png/terapiaAutoMov.png" 
           alt="Imagen persona Terapia Autodescubrimiento "
-          class="absolute hidden md:block bottom-0 right-0 w-[420px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          class="absolute hidden md:block bottom-0 right-0 w-[620px]  h-[280px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
         />
       </div>
 
@@ -450,24 +447,12 @@ style="">
   </div>
 
   <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-<div class="h-[10px] md:w-[80%] mx-auto bg-[#E3BE03]/85"></div>
+<div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
 
 
 </section>
 
-
-
-
-
-
-
 <!-- ****** -->
-
-
-
-
-
-
 <section class="w-full bg-[#336699] py-16 px-4">
   <!-- Título -->
   <h2 class="text-center text-white text-3xl font-semibold mb-12">Team</h2>
@@ -478,7 +463,7 @@ style="">
     <!-- Tarjeta 1 -->
     <div class="flex items-start gap-4">
       <!-- Imagen -->
-      <div class="w-24 h-24 bg-gray-200 rounded-tr-[50px] rounded-bl-[50px] flex items-center justify-center text-sm text-gray-500">
+      <div class="w-24 h-24 bg-gray-200 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center text-sm text-gray-500">
         Photo Diana
       </div>
       <!-- Info -->
@@ -494,7 +479,7 @@ style="">
     <!-- Tarjeta 2 -->
     <div class="flex items-start gap-4 flex-row-reverse text-right">
       <!-- Imagen -->
-      <div class="w-24 h-24 bg-gray-200 rounded-tl-[50px] rounded-br-[50px] flex items-center justify-center text-sm text-gray-500">
+      <div class="w-24 h-24 bg-gray-200 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center text-sm text-gray-500">
         Photo Jorge
       </div>
       <!-- Info -->
@@ -510,7 +495,7 @@ style="">
     <!-- Tarjeta 3 -->
     <div class="flex items-start gap-4">
       <!-- Imagen -->
-      <div class="w-24 h-24 bg-gray-200 rounded-tr-[50px] rounded-bl-[50px] flex items-center justify-center text-sm text-gray-500">
+      <div class="w-24 h-24 bg-gray-200 rounded-tr-[30px] rounded-bl-[30px] flex items-center justify-center text-sm text-gray-500">
         Photo Fidel
       </div>
       <!-- Info -->
