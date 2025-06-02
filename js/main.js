@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.remove('opacity-0', 'translate-y-4');
+          entry.target.classList.remove('opacity-0', 'translate-y-8');
           entry.target.classList.add('opacity-100', 'translate-y-0');
           observer.unobserve(entry.target);
         }
@@ -135,3 +135,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     items.forEach(item => observer.observe(item));
   });
+
+ 
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".scroll-animate");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "translate-y-4");
+          entry.target.classList.add("opacity-100", "translate-y-0");
+
+          // Si el elemento tiene una clase de animación, la deja activada
+          // La animación ya debe estar definida en el CSS (como fade-in-up, zoom-in, etc.)
+          observer.unobserve(entry.target); // Solo una vez
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+
