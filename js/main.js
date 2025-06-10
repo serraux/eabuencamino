@@ -12,26 +12,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 
-  const menuBtn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const iconOpen = document.getElementById('icon-open');
-  const iconClose = document.getElementById('icon-close');
+ document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    const iconOpen = document.getElementById("icon-open");
+    const iconClose = document.getElementById("icon-close");
 
-  // Mostrar/Ocultar menú al hacer clic en el botón
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    iconOpen.classList.toggle('hidden');
-    iconClose.classList.toggle('hidden');
-  });
+    let isOpen = false;
 
-  // Cerrar el menú al hacer clic en cualquier enlace dentro del menú
-  const menuLinks = menu.querySelectorAll('a');
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth < 768) {
-        menu.classList.add('hidden');
-        iconOpen.classList.remove('hidden');
-        iconClose.classList.add('hidden');
+    // Función para abrir/cerrar el menú
+    function toggleMenu() {
+      isOpen = !isOpen;
+
+      if (isOpen) {
+        menu.classList.remove("hidden", "w-0");
+        menu.classList.add("block", "w-full");
+        iconOpen.classList.add("hidden");
+        iconClose.classList.remove("hidden");
+      } else {
+        menu.classList.remove("block", "w-full");
+        menu.classList.add("hidden", "w-0");
+        iconOpen.classList.remove("hidden");
+        iconClose.classList.add("hidden");
+      }
+    }
+
+    // Click en el botón hamburguesa
+    menuBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // Evita que el clic se propague al body
+      toggleMenu();
+    });
+
+    // Click global: cierra si el clic es fuera del menú o botón
+    document.addEventListener("click", (e) => {
+      if (
+        isOpen &&
+        !menu.contains(e.target) &&
+        !menuBtn.contains(e.target)
+      ) {
+        isOpen = false;
+        menu.classList.remove("block", "w-full");
+        menu.classList.add("hidden", "w-0");
+        iconOpen.classList.remove("hidden");
+        iconClose.classList.add("hidden");
       }
     });
   });

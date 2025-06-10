@@ -1,72 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre EaBuenCamino</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#F8F4E3] text-[#336699]">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre EaBuenCamino</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F8F4E3] text-[#336699]">
     <!-- Header -->
-  <header class="sticky top-0 z-50 bg-[#78ACCF] px-6 py-4">
-  <div class="max-w-6xl mx-auto flex justify-between items-center relative">
+    <header class="sticky top-0 z-50 bg-[#78ACCF] px-6 py-4">
+      <div class="max-w-6xl mx-auto flex justify-between items-center relative">
+        <!-- Logo + Título con enlace -->
+        <a
+          href="index.html"
+          class="flex items-center space-x-4 hover:opacity-90 transition"
+        >
+          <img src="images/png/logoEABC.png" alt="Logo" class="h-18 w-9" />
+          <div class="text-white leading-tight">
+            <h1 class="text-xl font-light">
+              Ea,<br /><span class="font-semibold">BuenCamino</span>
+            </h1>
+            <p class="text-sm">Guía terapéutica para el bienestar integral</p>
+          </div>
+        </a>
 
-    <!-- Logo + Título -->
-    <div class="flex items-center space-x-4">
-      <img src="images/png/logoEABC.png" alt="Logo" class="h-18 w-9" />
-      <div class="text-white leading-tight">
-        <h1 class="text-xl font-light">Ea,<br><span class="font-semibold">BuenCamino</span></h1>
-        <p class="text-sm">Guía terapéutica para el bienestar integral</p>
+        <!-- Botón hamburguesa (solo visible en móvil) -->
+        <button
+          id="menu-btn"
+          class="text-white md:hidden focus:outline-none z-20"
+        >
+          <!-- Icono hamburguesa -->
+          <!-- Icono hamburguesa -->
+          <svg
+            id="icon-open"
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+
+          <!-- Icono de cerrar -->
+          <svg
+            id="icon-close"
+            class="w-6 h-6 fill-current hidden"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 6L18 18M6 18L18 6"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <!-- Menú de navegación -->
+        <nav
+          id="menu"
+          class="absolute top-full left-0 w-full md:static md:w-auto md:flex md:space-x-6 bg-[#F8F4E3] md:bg-transparent text-[#336699] md:text-white px-6 py-4 md:p-0 hidden md:block shadow-md md:shadow-none z-10"
+        >
+          <a href="index.html" class="block py-2 md:py-0 hover:underline"
+            >Inicio</a
+          >
+          <a href="about.html" class="block py-2 md:py-0 hover:underline"
+            >Sobre Nosotros</a
+          >
+          <a href="team.html" class="block py-2 md:py-0 hover:underline"
+            >Equipo</a
+          >
+          <a href="contact.html" class="block py-2 md:py-0 hover:underline"
+            >Contacto</a
+          >
+
+          <!-- Imagen decorativa visible solo en móvil -->
+          <img
+            src="images/svg/corner-deco.svg"
+            alt="Decoración inferior derecha"
+            class="block md:hidden absolute bottom-0 right-0 w-20 h-auto pointer-events-none"
+          />
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- Botón hamburguesa (solo visible en móvil) -->
-    <button id="menu-btn" class="text-white md:hidden focus:outline-none z-20">
-      <!-- Icono hamburguesa -->
-      <!-- Icono hamburguesa -->
-<svg id="icon-open" class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-</svg>
+    <!-- Contenedor principal -->
+    <main class="w-full max-w-[80%] mx-auto px-5 py-12">
+      <!-- Título centrado -->
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Servicios
+      </h1>
 
-      <!-- Icono de cerrar -->
-      <svg id="icon-close" class="w-6 h-6 fill-current hidden" viewBox="0 0 24 24">
-        <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round" />
-      </svg>
-    </button>
+      <!-- Sección de dos columnas en desktop / apilado en móvil -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <!-- Imagen a la izquierda -->
 
-    <!-- Menú de navegación -->
-    <nav id="menu" class="absolute top-full left-0 w-full md:static md:w-auto md:flex md:space-x-6 bg-[#F8F4E3] md:bg-transparent text-[#336699] md:text-white px-6 py-4 md:p-0 hidden md:block shadow-md md:shadow-none z-10">
-      <a href="index.html" class="block py-2 md:py-0 hover:underline">Inicio</a>
-      <a href="about.html" class="block py-2 md:py-0 hover:underline">Sobre Nosotros</a>
-      <a href="team.html" class="block py-2 md:py-0 hover:underline">Equipo</a>
-      <a href="contact.html" class="block py-2 md:py-0 hover:underline">Contacto</a>
-    </nav>
-
-  </div>
-</header>
-
-  <!-- Contenedor principal -->
-  <main class="w-full max-w-[80%] mx-auto px-5 py-12">
-
-    <!-- Título centrado -->
-    <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">
-      Servicios
-    </h1>
-
-    <!-- Sección de dos columnas en desktop / apilado en móvil -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-
-      <!-- Imagen a la izquierda -->
-      
-
-      <!-- Párrafo a la derecha -->
-      
-
-    </div>
-    
-  </main>
- <!-- JS -->
+        <!-- Párrafo a la derecha -->
+      </div>
+    </main>
+    <!-- JS -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

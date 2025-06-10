@@ -26,8 +26,11 @@
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-[#336699] px-6 py-4">
       <div class="max-w-6xl mx-auto flex justify-between items-center relative">
-        <!-- Logo + Título -->
-        <div class="flex items-center space-x-4">
+        <!-- Logo + Título con enlace -->
+        <a
+          href="index.html"
+          class="flex items-center space-x-4 hover:opacity-90 transition"
+        >
           <img src="images/png/logoEABC.png" alt="Logo" class="h-18 w-9" />
           <div class="text-white leading-tight">
             <h1 class="text-xl font-light">
@@ -35,7 +38,7 @@
             </h1>
             <p class="text-sm">Guía terapéutica para el bienestar integral</p>
           </div>
-        </div>
+        </a>
 
         <!-- Botón hamburguesa (solo visible en móvil) -->
         <button
@@ -77,7 +80,7 @@
         <!-- Menú de navegación -->
         <nav
           id="menu"
-          class=" absolute top-full left-0 w-full md:static md:w-auto md:flex md:space-x-6 bg-[#F8F4E3] md:bg-transparent text-[#336699] md:text-white px-6 py-4 md:p-0 hidden md:block shadow-md md:shadow-none z-10"
+          class="absolute top-full left-0 w-full md:static md:w-auto md:flex md:space-x-6 bg-[#F8F4E3] md:bg-transparent text-[#336699] md:text-white px-6 py-4 md:p-0 hidden md:block shadow-md md:shadow-none z-10"
         >
           <a href="about.html" class="block py-2 md:py-0 hover:underline"
             >Sobre Nosotros</a
