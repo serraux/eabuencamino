@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (isOpen) {
         menu.classList.remove("hidden", "w-0");
-        menu.classList.add("block", "w-[80%]");
+        menu.classList.add("block", "w-full");
         iconOpen.classList.add("hidden");
         iconClose.classList.remove("hidden");
       } else {
