@@ -23,7 +23,11 @@
     transform: translateY(0);
   }
 }
-
+@layer components {
+  .effect-fade-in-scroll {
+    @apply fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll;
+  }
+}
 .float-down {
   animation: floatDown 1.2s ease-out forwards;
 }
@@ -34,12 +38,12 @@
     opacity: 0;
   }
   to {
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 
 .animate-fade-in {
-  animation: fadeIn 1.2s ease-out forwards;
+  animation: fadeIn 0.4s ease-out forwards;
 }
 
 

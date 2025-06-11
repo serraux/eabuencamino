@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
+    const menu = document.getElementById("custom-mobile-menu");
     const iconOpen = document.getElementById("icon-open");
     const iconClose = document.getElementById("icon-close");
 
@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (isOpen) {
         menu.classList.remove("hidden", "w-0");
-        menu.classList.add("block", "w-full");
+        menu.classList.add("block", "w-[80%]");
         iconOpen.classList.add("hidden");
         iconClose.classList.remove("hidden");
       } else {
-        menu.classList.remove("block", "w-full");
+        menu.classList.remove("block", "w-[80%]");
         menu.classList.add("hidden", "w-0");
         iconOpen.classList.remove("hidden");
         iconClose.classList.add("hidden");
@@ -58,6 +58,48 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+
+// nuevo menu nav 
+/*
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu-btn");
+  const customMenu = document.getElementById("custom-mobile-menu");
+  const iconOpen = document.getElementById("icon-open");
+  const iconClose = document.getElementById("icon-close");
+  
+  let isOpen = false;
+
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    isOpen = !isOpen;
+    if (isOpen) {
+      customMenu.classList.remove("hidden");
+      iconOpen.classList.add("hidden");
+      iconClose.classList.remove("hidden");
+    } else {
+      customMenu.classList.add("hidden");
+      iconOpen.classList.remove("hidden");
+      iconClose.classList.add("hidden");
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (isOpen && !customMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      isOpen = false;
+      customMenu.classList.add("hidden");
+      iconOpen.classList.remove("hidden");
+      iconClose.classList.add("hidden");
+    }
+  });
+});
+*/
+
+
+
+
+
 
 
 //fade-in iamen individual therapy

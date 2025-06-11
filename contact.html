@@ -8,7 +8,7 @@
   </head>
   <body class="bg-[#F8F4E3] text-[#336699]">
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-[#78ACCF] px-6 py-4">
+    <header class="sticky top-0 z-50 bg-[#336699] px-6 py-4">
       <div class="max-w-6xl mx-auto flex justify-between items-center relative">
         <!-- Logo + Título con enlace -->
         <a
@@ -62,29 +62,51 @@
         </button>
 
         <!-- Menú de navegación -->
+         <!-- Menú de navegación -->
         <nav
-          id="menu"
-          class="absolute top-full left-0 w-full md:static md:w-auto md:flex md:space-x-6 bg-[#F8F4E3] md:bg-transparent text-[#336699] md:text-white px-6 py-4 md:p-0 hidden md:block shadow-md md:shadow-none z-10"
+          id="custom-mobile-menu"
+          class="fixed inset-0 z-40 mt-32 mx-auto bg-[#F8F4E3] hidden md:hidden overflow-hidden animate-fade-in flex items-center justify-center"
         >
-          <a href="index.html" class="block py-2 md:py-0 hover:underline"
-            >Inicio</a
+          <!-- Cuadrícula de navegación -->
+          <div
+            class="grid grid-cols-2 grid-rows-2 h-[80%] w-[80%] mx-auto ml-auto"
           >
-          <a href="about.html" class="block py-2 md:py-0 hover:underline"
-            >Sobre Nosotros</a
-          >
-          <a href="servicios.html" class="block py-2 md:py-0 hover:underline"
-            >Servicios</a
-          >
-          <a href="team.html" class="block py-2 md:py-0 hover:underline"
-            >Equipo</a
-          >
+            <!-- 1,1: Sobre Nosotros -->
+            <a
+              href="about.html"
+              class="relative flex items-center justify-center bg-[#336699] text-white text-center text-lg md:text-lg font-semibold"
+            >
+              Sobre Nosotros
+              <div class="absolute right-8 h-[30%] w-[2px] bg-[#F8F4E3]"></div>
+            </a>
 
-          <!-- Imagen decorativa visible solo en móvil -->
-          <img
-            src="images/svg/corner-deco.svg"
-            alt="Decoración inferior derecha"
-            class="block md:hidden absolute bottom-0 right-0 w-20 h-auto pointer-events-none"
-          />
+            <!-- 1,2: Servicios -->
+            <a
+              href="services.html"
+              class="relative flex items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
+            >
+              <div class="absolute left-8 h-[15%] w-[2px] bg-[#F8F4E3]"></div>
+              Servicios
+            </a>
+
+            <!-- 2,1: Conócenos -->
+            <a
+              href="team.html"
+              class="relative flex items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
+            >
+              Conócenos
+              <div class="absolute right-8 h-[15%] w-[2px] bg-[#F8F4E3]"></div>
+            </a>
+
+            <!-- 2,2: Contáctanos -->
+            <a
+              href="contact.html"
+              class="relative flex items-center justify-center text-lg md:text-lg bg-[#336699] text-white text-center font-semibold"
+            >
+              <div class="absolute left-8 h-[30%] w-[2px] bg-[#F8F4E3]"></div>
+              Contáctanos
+            </a>
+          </div>
         </nav>
       </div>
     </header>

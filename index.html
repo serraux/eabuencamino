@@ -79,27 +79,49 @@
 
         <!-- Menú de navegación -->
         <nav
-          id="menu"
-          class="absolute top-full left-0 w-full md:static md:w-auto md:flex md:space-x-6 bg-[#F8F4E3] md:bg-transparent text-[#336699] md:text-white px-6 py-4 md:p-0 hidden md:block shadow-md md:shadow-none z-10"
+          id="custom-mobile-menu"
+          class="fixed inset-0 z-40 mt-32 mx-auto bg-[#F8F4E3] hidden md:hidden overflow-hidden animate-fade-in flex items-center justify-center"
         >
-          <a href="about.html" class="block py-2 md:py-0 hover:underline"
-            >Sobre Nosotros</a
+          <!-- Cuadrícula de navegación -->
+          <div
+            class="grid grid-cols-2 grid-rows-2 h-[80%] w-[80%] mx-auto ml-auto"
           >
-          <a href="services.html" class="block py-2 md:py-0 hover:underline"
-            >Servicios</a
-          >
-          <a href="team.html" class="block py-2 md:py-0 hover:underline"
-            >Equipo</a
-          >
-          <a href="contact.html" class="block py-2 md:py-0 hover:underline"
-            >Contacto</a
-          >
-          <!-- Imagen decorativa visible solo en móvil -->
-          <img
-            src="images/svg/corner-deco.svg"
-            alt="Decoración inferior derecha"
-            class="block md:hidden absolute bottom-0 right-0 w-20 h-auto pointer-events-none"
-          />
+            <!-- 1,1: Sobre Nosotros -->
+            <a
+              href="about.html"
+              class="relative flex items-center justify-center bg-[#336699] text-white text-center text-lg md:text-lg font-semibold"
+            >
+              Sobre Nosotros
+              <div class="absolute right-8 h-[30%] w-[2px] bg-[#F8F4E3]"></div>
+            </a>
+
+            <!-- 1,2: Servicios -->
+            <a
+              href="services.html"
+              class="relative flex items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
+            >
+              <div class="absolute left-8 h-[15%] w-[2px] bg-[#F8F4E3]"></div>
+              Servicios
+            </a>
+
+            <!-- 2,1: Conócenos -->
+            <a
+              href="team.html"
+              class="relative flex items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
+            >
+              Conócenos
+              <div class="absolute right-8 h-[15%] w-[2px] bg-[#F8F4E3]"></div>
+            </a>
+
+            <!-- 2,2: Contáctanos -->
+            <a
+              href="contact.html"
+              class="relative flex items-center justify-center text-lg md:text-lg bg-[#336699] text-white text-center font-semibold"
+            >
+              <div class="absolute left-8 h-[30%] w-[2px] bg-[#F8F4E3]"></div>
+              Contáctanos
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -137,13 +159,47 @@
             id="prevBtn"
             class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full"
           >
-            ‹
+            <!-- Arrow left -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z"
+                clip-rule="evenodd"
+              />
+            </svg>
           </button>
           <button
             id="nextBtn"
             class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full"
           >
-            ›
+            <!-- Aroow rigth -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                clip-rule="evenodd"
+              />
+            </svg>
           </button>
         </div>
       </div>
