@@ -46,7 +46,6 @@
           class="text-white md:hidden focus:outline-none z-20"
         >
           <!-- Icono hamburguesa -->
-
           <svg
             id="icon-open"
             class="w-6 h-6 text-white"
@@ -61,7 +60,6 @@
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-
           <!-- Icono de cerrar -->
           <svg
             id="icon-close"
@@ -77,10 +75,18 @@
           </svg>
         </button>
 
-        <!-- Menú de navegación -->
+        <!-- Menú de navegación para escritorio -->
+        <nav class="hidden md:flex space-x-8 text-white text-lg font-semibold">
+          <a href="about.html" class="hover:underline">Sobre Nosotros</a>
+          <a href="services.html" class="hover:underline">Servicios</a>
+          <a href="team.html" class="hover:underline">Equipo</a>
+          <a href="contact.html" class="hover:underline">Contacto</a>
+        </nav>
+
+        <!-- Menú de navegación para móviles -->
         <nav
           id="custom-mobile-menu"
-          class="fixed inset-0 z-40 mt-32 mx-auto bg-[#F8F4E3] hidden md:hidden overflow-hidden animate-fade-in flex items-center justify-center"
+          class="fixed inset-0 z-40 mt-32 mx-auto bg-[#F8F4E3] md:hidden overflow-hidden animate-fade-in flex items-center justify-center"
         >
           <!-- Esquinas decorativas -->
           <img
@@ -468,7 +474,7 @@
         <img
           src="images/png/new-horizon.png"
           alt="Imagen nuevo horizonte"
-          class="absolute bottom-2 size-20 md:size-20 md:bottom-4 md:size-32 mx-auto z-10 max-w-[200px]"
+          class="absolute bottom-3 md:bottom-4 w-20 h-auto md:size-20 md:bottom-4 md:size-32 mx-auto z-10 max-w-[200px]"
         />
       </div>
     </section>
