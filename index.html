@@ -111,10 +111,27 @@
             <!-- 1,2: Servicios -->
             <a
               href="services.html"
-              class="relative flex items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
+              class="relative flex flex-col items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
             >
               Servicios
-              <!-- <div class="absolute left-8 h-[15%] w-[2px] bg-[#F8F4E3]"></div> -->
+              <div class="mt-3">
+                <svg
+                  width="40"
+                  height="25"
+                  viewBox="0 0 200 100"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="flip">
+                    <!-- Círculo (cabeza de la llave) -->
+                    <circle cx="40" cy="50" r="30" fill="#F8F4E3" />
+                    <!-- Cuerpo de la llave -->
+                    <rect x="70" y="45" width="90" height="10" fill="#F8F4E3" />
+                    <!-- Dientes de la llave -->
+                    <rect x="110" y="55" width="6" height="10" fill="#F8F4E3" />
+                    <rect x="150" y="55" width="6" height="20" fill="#F8F4E3" />
+                  </g>
+                </svg>
+              </div>
 
               <img
                 src="images/png/corner-bl.png"
@@ -137,20 +154,72 @@
                   height="25"
                   viewBox="0 0 160 100"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  stroke="#F8F4E3"
-                  stroke-width="3"
-                  class="eyes-bounce"
                 >
+                  <defs>
+                    <!-- Máscara animada para los ojos -->
+                    <mask id="eyeMask">
+                      <rect width="160" height="100" fill="white" />
+                      <!-- Párpado animado -->
+                      <rect
+                        id="lid"
+                        x="0"
+                        y="0"
+                        width="160"
+                        height="100"
+                        fill="black"
+                      >
+                        <animate
+                          attributeName="y"
+                          values="50;100;30"
+                          dur="4s"
+                          repeatCount="indefinite"
+                          begin="0s"
+                        />
+                      </rect>
+                    </mask>
+                  </defs>
+
                   <!-- Ojo izquierdo -->
-                  <circle cx="40" cy="60" r="30" />
-                  <circle cx="40" cy="60" r="12" />
-                  <path d="M10 60 A40 40 0 0 1 70 60" />
+                  <g mask="url(#eyeMask)">
+                    <circle
+                      cx="40"
+                      cy="60"
+                      r="30"
+                      fill="#336699"
+                      stroke="#336699"
+                      stroke-width="3"
+                    />
+                    <circle cx="40" cy="60" r="12" fill="#556699" />
+                  </g>
+                  <circle
+                    cx="40"
+                    cy="60"
+                    r="30"
+                    fill="none"
+                    stroke="#336699"
+                    stroke-width="3"
+                  />
 
                   <!-- Ojo derecho -->
-                  <circle cx="120" cy="60" r="30" />
-                  <circle cx="120" cy="60" r="12" />
-                  <path d="M90 60 A40 40 0 0 1 150 60" />
+                  <g mask="url(#eyeMask)">
+                    <circle
+                      cx="120"
+                      cy="60"
+                      r="30"
+                      fill="#336699"
+                      stroke="#336699"
+                      stroke-width="3"
+                    />
+                    <circle cx="120" cy="60" r="12" fill="#556699" />
+                  </g>
+                  <circle
+                    cx="120"
+                    cy="60"
+                    r="30"
+                    fill="none"
+                    stroke="#336699"
+                    stroke-width="3"
+                  />
                 </svg>
               </div>
 
@@ -165,10 +234,34 @@
             <!-- 2,2: Contáctanos -->
             <a
               href="contact.html"
-              class="relative flex items-center justify-center text-lg md:text-lg bg-[#336699] text-white text-center font-semibold"
+              class="relative flex flex-col items-center justify-center bg-[#336699] text-[#F8F4E3] text-lg md:text-lg text-[#336699] text-center font-semibold"
             >
               Contáctanos
-              <!-- <div class="absolute left-8 h-[30%] w-[2px] bg-[#F8F4E3]"></div> -->
+              <div class="mt-3">
+                <svg
+                  width="40"
+                  height="25"
+                  viewBox="0 0 200 120"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="wiggle">
+                    <!-- Contorno de la tarjeta -->
+                    <rect
+                      x="10"
+                      y="10"
+                      width="180"
+                      height="100"
+                      rx="16"
+                      ry="16"
+                      fill="none"
+                      stroke="#F8F4E3"
+                      stroke-width="6"
+                    />
+                    <!-- Círculo decorativo -->
+                    <circle cx="160" cy="60" r="10" fill="#F8F4E3" />
+                  </g>
+                </svg>
+              </div>
 
               <img
                 src="images/png/corner-tl.png"
