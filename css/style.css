@@ -59,3 +59,17 @@ h1, h2, h3, h4 {
 body, p, a, span, li {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/* Animacion de svg menu nav en movil version */
+.eyes-bounce {
+      animation: bounceUp 6s ease-in-out 2s infinite;
+    }
+
+    @keyframes bounceUp {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
