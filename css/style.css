@@ -79,7 +79,8 @@ li {
     transform: translateY(-10px);
   }
 }
-.wiggle {
+
+.wiggle-card {
   transform-origin: center;
   animation: wiggle 2s ease-in-out infinite;
 }
@@ -99,16 +100,39 @@ li {
     transform: rotate(2deg);
   }
 }
-  .flip {
-      transform-origin: center;
-      animation: flipY 10s ease-in-out infinite;
-    }
 
-    @keyframes flipY {
-      0%, 100% {
-        transform: rotateY(0deg);
-      }
-      50% {
-        transform: rotateY(180deg);
-      }
-    }
+.flip {
+  transform-origin: center;
+  animation: flipY 10s ease-in-out infinite;
+}
+
+@keyframes flipY {
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+.heart-group {
+  transform-origin: center;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.heart {
+  fill: none;
+  stroke: #f8f4e3;
+  stroke-width: 2;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
