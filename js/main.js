@@ -82,6 +82,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Scritp para desplegar el contenido para cada tarjeta del equipo
+function toggleContent(id, btn) {
+    const content = document.getElementById(id);
+    const expanded = content.classList.contains('max-h-0');
+    content.classList.toggle('max-h-0');
+    content.classList.toggle('max-h-[2000px]');
+    btn.textContent = expanded ? "Leer menos" : "Leer más";
+  }
+
 // nuevo menu nav
 /*
 document.addEventListener("DOMContentLoaded", () => {

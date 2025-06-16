@@ -3,8 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre EaBuenCamino</title>
+    <link rel="icon" href="images/faviconea.png" type="image/x-icon" />
+
+    <title>EABuenCamino - Terapia y Bienestar</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS (opcional) -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="bg-[#F8F4E3] text-[#336699]">
     <!-- Header -->
@@ -295,20 +312,191 @@
     </header>
 
     <!-- Contenedor principal -->
-    <main class="w-full max-w-[80%] mx-auto px-5 py-12">
-      <!-- Título centrado -->
-      <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">
-        Información del Equipo
-      </h1>
+    <main class="w-full  mx-auto px-5 py-12">
+      <section class="bg-gray-100 py-12 px-4 md:px-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Conoce a Nuestro Equipo
+        </h2>
 
-      <!-- Sección de dos columnas en desktop / apilado en móvil -->
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-        <!-- Imagen a la izquierda -->
+        <div class="space-y-16">
+          <!-- Tarjeta 1: Diana -->
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12 border-b-4 border-[#336699] pb-6"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <img
+              src="/images/diana-hernandez.jpg"
+              alt="Diana Hernández"
+              class="w-40 h-40 rounded-full object-cover shadow-md"
+            />
+            <div class="w-full">
+              <h3 class="text-2xl font-semibold">Diana Hernández, LPCC</h3>
+              <p class="text-indigo-600 font-medium">
+                Consejera Clínica Bilingüe
+              </p>
+              <p class="mt-3 text-gray-700">
+                Diana combina su experiencia bicultural con más de 12 años en
+                salud mental. Está especializada en trauma, depresión y terapia
+                familiar.
+              </p>
+              <div
+                id="diana-content"
+                class="overflow-hidden transition-all max-h-0 duration-700 ease-in-out"
+              >
+                <p class="mt-3 text-gray-700">
+                  Ha trabajado en comunidades vulnerables y aplica enfoques como
+                  la teoría polivagal, EMDR y Sandtray Therapy. Su mirada se
+                  basa en la compasión, autenticidad y la autorreflexión.
+                </p>
+                <p class="mt-3 text-gray-700 font-medium italic">
+                  Su objetivo es ayudarte a ver tu proceso como un camino
+                  compartido de sanación y autocompasión.
+                </p>
+              </div>
+              <button
+                onclick="toggleContent('diana-content', this)"
+                class="mt-4 text-blue-600 font-medium hover:underline"
+              >
+                Leer más
+              </button>
+            </div>
+          </div>
+          <!-- Tarjeta 4: Fidel -->
+          <div
+            class="flex flex-col md:flex-row-reverse items-center md:items-start gap-6 md:gap-12 border-b-4 border-[#336699] pb-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="/images/fidel-ramirez.jpg"
+              alt="Fidel Ramírez Ortiz"
+              class="w-40 h-40 rounded-full object-cover shadow-md"
+            />
+            <div class="w-full">
+              <h3 class="text-2xl font-semibold">Fidel Ramírez Ortiz</h3>
+              <p class="text-indigo-600 font-medium">
+                Salud mental y acompañamiento espiritual
+              </p>
+              <p class="mt-3 text-gray-700">
+                Fidel ofrece una práctica bilingüe con enfoque clínico y
+                espiritual, acompañando con compasión a personas en los márgenes
+                sociales.
+              </p>
+              <div
+                id="fidel-content"
+                class="overflow-hidden transition-all max-h-0 duration-700 ease-in-out"
+              >
+                <p class="mt-3 text-gray-700">
+                  Usa herramientas como CBT, Terapia Centrada en la Persona,
+                  integración cuerpo/mente y espiritualidad, creando espacios de
+                  sanación profunda.
+                </p>
+                <p class="mt-3 text-gray-700">
+                  Con una historia personal de resiliencia, acompaña con
+                  presencia honesta, sin recetas, solo caminos hacia uno mismo.
+                </p>
+                <p class="mt-3 text-gray-700 font-medium italic">
+                  Cada historia es sagrada. Cada regreso a la integridad es un
+                  retorno al hogar.
+                </p>
+              </div>
+              <button
+                onclick="toggleContent('fidel-content', this)"
+                class="mt-4 text-blue-600 font-medium hover:underline"
+              >
+                Leer más
+              </button>
+            </div>
+          </div>
 
-        <!-- Párrafo a la derecha -->
-      </div>
+          <!-- Tarjeta 2: Carlos -->
+          <div
+            class="flex flex-col md:flex-row-reverse items-center md:items-start gap-6 md:gap-12 border-b-4 border-[#336699] pb-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="/images/terapista2.jpg"
+              alt="Jorge B"
+              class="w-40 h-40 rounded-full object-cover shadow-md"
+            />
+            <div class="w-full">
+              <h3 class="text-2xl font-semibold">Jorge B, LCSW</h3>
+              <p class="text-indigo-600 font-medium">
+                Especialista en Ansiedad y Conducta
+              </p>
+              <p class="mt-3 text-gray-700">
+                Con más de 10 años de experiencia, Jorge apoya a adolescentes y
+                adultos en el manejo de ansiedad y autoestima.
+              </p>
+              <div
+                id="carlos-content"
+                class="overflow-hidden transition-all max-h-0 duration-700 ease-in-out"
+              >
+                <p class="mt-3 text-gray-700">
+                  Su enfoque combina técnicas cognitivas y mindfulness, con un
+                  estilo empático y centrado en soluciones prácticas para cada
+                  persona.
+                </p>
+              </div>
+              <button
+                onclick="toggleContent('carlos-content', this)"
+                class="mt-4 text-blue-600 font-medium hover:underline"
+              >
+                Leer más
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: María -->
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12 border-b-4border-[#336699] pb-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="/images/terapista3.jpg"
+              alt="María López"
+              class="w-40 h-40 rounded-full object-cover shadow-md"
+            />
+            <div class="w-full">
+              <h3 class="text-2xl font-semibold">María López, MFT</h3>
+              <p class="text-indigo-600 font-medium">
+                Terapia de Pareja y Crianza
+              </p>
+              <p class="mt-3 text-gray-700">
+                María se ha especializado en dinámicas familiares, relaciones de
+                pareja y crianza consciente.
+              </p>
+              <div
+                id="maria-content"
+                class="overflow-hidden transition-all max-h-0 duration-700 ease-in-out"
+              >
+                <p class="mt-3 text-gray-700">
+                  Con enfoque sistémico y terapias narrativas, acompaña procesos
+                  donde se fortalecen los vínculos afectivos desde el respeto y
+                  la empatía.
+                </p>
+              </div>
+              <button
+                onclick="toggleContent('maria-content', this)"
+                class="mt-4 text-blue-600 font-medium hover:underline"
+              >
+                Leer más
+              </button>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
     </main>
     <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
