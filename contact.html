@@ -8,7 +8,7 @@
   </head>
   <body class="bg-[#F8F4E3] text-[#336699]">
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-[#336699] px-6 py-4">
+     <header class="sticky top-0 z-50 bg-[#336699] px-6 py-4">
       <div class="max-w-6xl mx-auto flex justify-between items-center relative">
         <!-- Logo + Título con enlace -->
         <a
@@ -30,7 +30,6 @@
           class="text-white md:hidden focus:outline-none z-20"
         >
           <!-- Icono hamburguesa -->
-          <!-- Icono hamburguesa -->
           <svg
             id="icon-open"
             class="w-6 h-6 text-white"
@@ -45,7 +44,6 @@
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-
           <!-- Icono de cerrar -->
           <svg
             id="icon-close"
@@ -61,71 +59,235 @@
           </svg>
         </button>
 
-        <!-- Menú de navegación -->
-        <!-- Menú de navegación -->
+        <!-- Menú de navegación para escritorio -->
+        <nav class="hidden md:flex space-x-8 text-white text-lg font-semibold">
+          <a href="about.html" class="hover:underline">Sobre Nosotros</a>
+          <a href="services.html" class="hover:underline">Servicios</a>
+          <a href="team.html" class="hover:underline">Equipo</a>
+          <a href="contact.html" class="hover:underline">Contacto</a>
+        </nav>
+
+        <!-- Menú de navegación para móviles -->
         <nav
           id="custom-mobile-menu"
           class="fixed inset-0 z-40 mt-32 mx-auto bg-[#F8F4E3] hidden md:hidden overflow-hidden animate-fade-in flex items-center justify-center"
         >
           <!-- Esquinas decorativas -->
-          <img
-            src="images/png/corner-tl.png"
-            class="absolute top-0 left-0 w-6 h-6"
-            alt="Decoración esquina superior izquierda"
-          />
-          <img
-            src="images/png/corner-tr.png"
-            class="absolute top-0 right-0 w-6 h-6"
-            alt="Decoración esquina superior derecha"
-          />
-          <img
-            src="images/png/corner-bl.png"
-            class="absolute bottom-0 left-0 w-6 h-6"
-            alt="Decoración esquina inferior izquierda"
-          />
-          <img
-            src="images/png/corner-br.png"
-            class="absolute bottom-0 right-0 w-6 h-6"
-            alt="Decoración esquina inferior derecha"
-          />
+
           <!-- Cuadrícula de navegación -->
           <div
-            class="grid grid-cols-2 grid-rows-2 h-[80%] w-[80%] mx-auto ml-auto gap-4"
+            class="grid grid-cols-2 grid-rows-2 h-[80%] w-[80%] mx-auto ml-auto gap-2"
           >
             <!-- 1,1: Sobre Nosotros -->
             <a
-              href="index.html"
-              class="relative flex items-center justify-center bg-[#336699] text-white text-center text-lg md:text-lg font-semibold"
+              href="about.html"
+              class="relative flex flex-col items-center justify-center bg-[#336699] text-white text-center text-lg md:text-lg font-semibold"
             >
-              Inicio
-              <div class="absolute right-8 h-[30%] w-[2px] bg-[#F8F4E3]"></div>
+              Sobre Nosotros
+              <div class="mt-3">
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="-5 -5 42 39"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="heart-group">
+                    <path
+                      class="heart"
+                      d="M23.6,0c-3.4,0-6.3,2.1-7.6,5.1C14.7,2.1,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,4.4,3.4,8.1,10.2,13.9
+      c2.6,2.1,5.2,4.2,5.2,4.2s2.6-2.1,5.2-4.2C28.6,16.5,32,12.8,32,8.4C32,3.8,28.2,0,23.6,0z"
+      style="fill:#F8F4E3;"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <img
+                src="images/png/corner-br.png"
+                class="absolute bottom-0 right-0 w-6 h-6"
+                alt="Decoración esquina inferior derecha"
+              />
             </a>
 
             <!-- 1,2: Servicios -->
             <a
-              href="about.html"
-              class="relative flex items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
+              href="services.html"
+              class="relative flex flex-col items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
             >
-              <div class="absolute left-8 h-[15%] w-[2px] bg-[#F8F4E3]"></div>
-              Sobre Nosotros
+              Servicios
+              <div class="mt-3">
+                <svg
+                  width="40"
+                  height="25"
+                  viewBox="0 0 200 100"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g class="flip">
+                    <!-- Círculo (cabeza de la llave) -->
+                    <circle cx="40" cy="50" r="30" fill="#336699" />
+                    <!-- Cuerpo de la llave -->
+                    <rect x="70" y="45" width="90" height="10" fill="#336699" />
+                    <!-- Dientes de la llave -->
+                    <rect x="110" y="55" width="6" height="10" fill="#336699" />
+                    <rect x="150" y="55" width="6" height="20" fill="#336699" />
+                  </g>
+                </svg>
+              </div>
+
+              <img
+                src="images/png/corner-bl.png"
+                class="absolute bottom-0 left-0 w-6 h-6"
+                alt="Decoración esquina inferior izquierda"
+              />
             </a>
 
             <!-- 2,1: Conócenos -->
             <a
               href="team.html"
-              class="relative flex items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
+              class="relative flex flex-col items-center justify-center bg-[#E3BE03] text-lg md:text-lg text-[#336699] text-center font-semibold"
             >
-              Servicios
-              <div class="absolute right-8 h-[15%] w-[2px] bg-[#F8F4E3]"></div>
+              Conócenos
+
+              <!-- Espacio de 12px + SVG -->
+              <div class="mt-3">
+                <svg
+                  width="40"
+                  height="25"
+                  viewBox="0 0 160 100"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <!-- Máscara animada para los ojos -->
+                    <mask id="eyeMask">
+                      <rect width="160" height="100" fill="white" />
+                      <rect
+                        id="lid"
+                        x="0"
+                        y="0"
+                        width="160"
+                        height="100"
+                        fill="black"
+                      >
+                        <animate
+                          attributeName="y"
+                          values="50;100;30"
+                          dur="4s"
+                          repeatCount="indefinite"
+                          begin="0s"
+                        />
+                      </rect>
+                    </mask>
+                  </defs>
+
+                  <!-- Ojo izquierdo -->
+                  <g mask="url(#eyeMask)">
+                    <circle
+                      cx="40"
+                      cy="60"
+                      r="30"
+                      fill="#336699"
+                      stroke="#336699"
+                      stroke-width="3"
+                    />
+                    <circle cx="40" cy="60" r="12" fill="#556699" />
+                  </g>
+                  <circle
+                    cx="40"
+                    cy="60"
+                    r="30"
+                    fill="none"
+                    stroke="#336699"
+                    stroke-width="3"
+                  />
+
+                  <!-- Ojo derecho -->
+                  <g mask="url(#eyeMask)">
+                    <circle
+                      cx="120"
+                      cy="60"
+                      r="30"
+                      fill="#336699"
+                      stroke="#336699"
+                      stroke-width="3"
+                    />
+                    <circle cx="120" cy="60" r="12" fill="#556699" />
+                  </g>
+                  <circle
+                    cx="120"
+                    cy="60"
+                    r="30"
+                    fill="none"
+                    stroke="#336699"
+                    stroke-width="3"
+                  />
+
+                  <!-- Pupilas fijas animadas (movimiento horizontal) -->
+                  <circle cy="60" r="15" fill="#336699">
+                    <animate
+                      attributeName="cx"
+                      values="37;43;37"
+                      dur="4s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <circle cy="60" r="15" fill="#336699">
+                    <animate
+                      attributeName="cx"
+                      values="117;123;117"
+                      dur="4s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                </svg>
+              </div>
+
+              <!-- Decoración esquina -->
+              <img
+                src="images/png/corner-tr.png"
+                class="absolute top-0 right-0 w-6 h-6"
+                alt="Decoración esquina superior derecha"
+              />
             </a>
 
             <!-- 2,2: Contáctanos -->
             <a
               href="contact.html"
-              class="relative flex items-center justify-center text-lg md:text-lg bg-[#336699] text-white text-center font-semibold"
+              class="relative flex flex-col items-center justify-center bg-[#336699] text-[#F8F4E3] text-lg md:text-lg text-[#336699] text-center font-semibold"
             >
-              <div class="absolute left-8 h-[30%] w-[2px] bg-[#F8F4E3]"></div>
-              Conócenos
+              Contáctanos
+              <div class="mt-3">
+                <svg
+                  width="20"
+                  height="30"
+                  viewBox="0 0 60 120"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="wiggle-card"
+                >
+                  <g>
+                    <!-- Contorno -->
+                    <rect
+                      x="5"
+                      y="5"
+                      width="50"
+                      height="110"
+                      rx="8"
+                      ry="8"
+                      fill="#F8F4E3"
+                      stroke="#F
+                      
+                      E3"
+                      stroke-width="4"
+                    />
+                    <!-- Círculo inferior -->
+                    <circle cx="30" cy="100" r="10" fill="#336699" />
+                  </g>
+                </svg>
+              </div>
+
+              <img
+                src="images/png/corner-tl.png"
+                class="absolute top-0 left-0 w-6 h-6"
+                alt="Decoración esquina superior izquierda"
+              />
             </a>
           </div>
         </nav>
