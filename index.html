@@ -17,7 +17,6 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,7 +25,7 @@
   </head>
   <body class="bg-[#F8F4E3] text-gray-800">
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-[#336699] px-6 py-4">
+    <header class="sticky top-0 z-50 bg-[#336699] px-6 py-4 lg:w-[70%] mx-auto">
       <div class="max-w-6xl mx-auto flex justify-between items-center relative">
         <!-- Logo + Título con enlace -->
         <a
@@ -114,7 +113,7 @@
                       class="heart"
                       d="M23.6,0c-3.4,0-6.3,2.1-7.6,5.1C14.7,2.1,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,4.4,3.4,8.1,10.2,13.9
       c2.6,2.1,5.2,4.2,5.2,4.2s2.6-2.1,5.2-4.2C28.6,16.5,32,12.8,32,8.4C32,3.8,28.2,0,23.6,0z"
-      style="fill:#F8F4E3;"
+                      style="fill: #f8f4e3"
                     />
                   </g>
                 </svg>
@@ -313,188 +312,189 @@
     </header>
 
     <!-- Sección de imagen destacada con texto encima -->
-
-    <section class="w-full py-4 flex justify-center mx-auto relative">
-      <div
-        class="w-full md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto relative overflow-hidden"
-      >
-        <!-- Carrusel de imágenes -->
-        <div id="carousel" class="relative w-full h-auto z-0">
-          <img
-            src="images/png/mainBanner1.png"
-            class="carousel-img w-full h-auto block"
-          />
-          <img
-            src="images/png/mainBanner2.png"
-            class="carousel-img w-full h-auto hidden"
-          />
-          <img
-            src="images/png/mainBanner3.png"
-            class="carousel-img w-full h-auto hidden"
-          />
-        </div>
-
-        <!-- Capa transparente blanca al 20% -->
-        <div class="absolute inset-0 bg-white/20 z-10"></div>
-
-        <!-- Botones -->
+    <div class="w-full lg:w-[70%] mx-auto">
+      <section class="w-full py-4 flex justify-center mx-auto relative">
         <div
-          class="absolute inset-0 flex items-center justify-between px-4 z-20"
+          class="w-full mx-auto relative overflow-hidden"
         >
-          <button
-            id="prevBtn"
-            class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full"
+          <!-- Carrusel de imágenes -->
+          <div id="carousel" class="relative w-full h-auto z-0">
+            <img
+              src="images/png/mainBanner1.png"
+              class="carousel-img w-full h-auto block"
+            />
+            <img
+              src="images/png/mainBanner2.png"
+              class="carousel-img w-full h-auto hidden"
+            />
+            <img
+              src="images/png/mainBanner3.png"
+              class="carousel-img w-full h-auto hidden"
+            />
+          </div>
+
+          <!-- Capa transparente blanca al 20% -->
+          <div class="absolute inset-0 bg-white/20 z-10"></div>
+
+          <!-- Botones -->
+          <div
+            class="absolute inset-0 flex items-center justify-between px-4 z-20"
           >
-            <!-- Arrow left -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="size-6"
+            <button
+              id="prevBtn"
+              class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full"
             >
-              <path
-                fill-rule="evenodd"
-                d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z"
-                clip-rule="evenodd"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-          <button
-            id="nextBtn"
-            class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full"
-          >
-            <!-- Aroow rigth -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="size-6"
+              <!-- Arrow left -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L12.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M4.72 11.47a.75.75 0 0 0 0 1.06l7.5 7.5a.75.75 0 1 0 1.06-1.06L6.31 12l6.97-6.97a.75.75 0 0 0-1.06-1.06l-7.5 7.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button
+              id="nextBtn"
+              class="bg-[#336699]/70 hover:bg-[#336699] text-white px-3 py-1 rounded-full"
             >
-              <path
-                fill-rule="evenodd"
-                d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                clip-rule="evenodd"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
+              <!-- Aroow rigth -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Sección raíz -->
-    <section
-      class="w-full md:w-[70%] lg:w-[70%] xl:w-[70%] px-4 mx-auto h-[120px] md:h-[160px] bg-[#336699] relative flex items-center justify-center overflow-hidden"
-    >
-      <!-- Imagen izquierda centrada verticalmente -->
-      <img
-        src="images/svg/left-deco-logo.svg"
-        alt="Decoración izquierda"
-        class="absolute left-0 md:top-1/2 md:-translate-y-1/2 z-0 w-14 md:w-20 pointer-events-none"
-      />
-
-      <!-- Imagen derecha alineada al fondo -->
-      <img
-        src="images/svg/right-deco-windmill.svg"
-        alt="Decoración derecha windmill"
-        class="absolute right-0 z-0 w-20 md:w-32 pointer-events-none"
-      />
-
-      <!-- Contenido -->
-      <div class="w-full max-w-7xl flex items-stretch h-full relative z-10">
-        <!-- Texto y botón centrados -->
-        <div
-          class="relative w-[80%] flex items-center justify-around gap-4 text-[#F8F4E3] text-center mx-auto"
-        >
-          <span
-            class="text-sm sm:text-sm md:text-2xl font-semibold whitespace-nowrap fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-          >
-            ¿Listo para un cambio?
-          </span>
-          <a
-            href="#contact"
-            class="bg-[#E3BE03] text-white px-4 py-2 rounded-full text-xs md:text-xl hover:bg-[#2b5c88] whitespace-nowrap fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-          >
-            Reservar consulta gratis
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!--Yellow Brake Line -->
-    <section
-      class="relative bg-[#F8F4E3] w-full md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto h-16 md:h-40"
-      style="
-        background-image: url('images/svg/yellow-br-line.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      "
-    ></section>
-
-    <!-- Sección de imagen water mountain banner -->
-    <section
-      class="relative w-[95%] md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto bg-[#F8F4E3] py-2 mx-auto"
-    >
-      <!-- Contenedor del texto -->
-      <div
-        class="relative z-10 px-8 mx-auto rounded-lg p-2 text-center text-[#336699] shadow-md md:z-10"
-      >
-        <p
-          class="text-lg md:text-3xl font-medium font-bold fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-        >
-          A veces, el reflejo que se ve en la superficie calma no muestra todo
-          lo que se lleva dentro
-        </p>
-      </div>
-
-      <!-- Contenedor de la imagen que se solapa con el texto -->
-      <div
-        class="-mt-2 relative z-0 mx-auto fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-      >
-        <img
-          src="images/png/mountain-water-banner.png"
-          alt="Imagen de conexión emocional"
-          class="w-full h-auto rounded-lg shadow-lg"
-        />
-      </div>
-    </section>
-
-    <!-- Sección raíz con fondo -->
-
-    <section class="w-[95%] py-0 mx-auto bg-cover bg-center">
-      <!-- Capa blanca semitransparente -->
+      <!-- Sección raíz -->
       <section
-        class="relative md:w-[70%] lg:w-[70%] xl:w-[74%] mx-auto bg-white/90 py-0 top-0 overflow-hidden"
+        class="w-full  px-4 mx-auto h-[120px] md:h-[160px] bg-[#336699] relative flex items-center justify-center overflow-hidden"
       >
-        <!-- SVG izquierda -->
+        <!-- Imagen izquierda centrada verticalmente -->
         <img
-          src="images/svg/left-deco-arrow.svg"
+          src="images/svg/left-deco-logo.svg"
           alt="Decoración izquierda"
-          class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
+          class="absolute left-0 md:top-1/2 md:-translate-y-1/2 z-0 w-14 md:w-20 pointer-events-none"
         />
 
-        <!-- SVG derecha -->
+        <!-- Imagen derecha alineada al fondo -->
         <img
-          src="images/svg/right-deco-arrow.svg"
-          alt="Decoración derecha"
-          class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
+          src="images/svg/right-deco-windmill.svg"
+          alt="Decoración derecha windmill"
+          class="absolute right-0 z-0 w-20 md:w-32 pointer-events-none"
         />
 
-        <!-- Contenido principal -->
+        <!-- Contenido -->
+        <div class="w-full max-w-7xl flex items-stretch h-full relative z-10">
+          <!-- Texto y botón centrados -->
+          <div
+            class="relative w-[80%] flex items-center justify-around gap-4 text-[#F8F4E3] text-center mx-auto"
+          >
+            <span
+              class="text-sm sm:text-sm md:text-2xl font-semibold whitespace-nowrap fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+            >
+              ¿Listo para un cambio?
+            </span>
+            <a
+              href="#contact"
+              class="bg-[#E3BE03] text-white px-4 py-2 rounded-full text-xs md:text-xl hover:bg-[#2b5c88] whitespace-nowrap fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+            >
+              Reservar consulta gratis
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--Yellow Brake Line -->
+      <section
+        class="relative bg-[#F8F4E3] w-full  mx-auto h-16 md:h-40"
+        style="
+          background-image: url('images/svg/yellow-br-line.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+        "
+      ></section>
+
+      <!-- Sección de imagen water mountain banner -->
+      <section
+        class="relative w-full  mx-auto bg-[#F8F4E3] py-2 mx-auto"
+      >
+        <!-- Contenedor del texto -->
         <div
-          class="relative z-10 max-w-4xl top-0 mx-auto rounded-xl md:p-6 text-center fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          class="relative z-10 px-8 mx-auto rounded-lg p-2 text-center text-[#336699] shadow-md md:z-10"
         >
-          <h2 class="font-title italic text-2xl text-[#336699] py-8">
+          <p
+            class="text-lg md:text-3xl font-medium font-bold fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          >
+            A veces, el reflejo que se ve en la superficie calma no muestra todo
+            lo que se lleva dentro
+          </p>
+        </div>
+
+        <!-- Contenedor de la imagen que se solapa con el texto -->
+        <div
+          class="-mt-2 relative z-0 mx-auto fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        >
+          <img
+            src="images/png/mountain-water-banner.png"
+            alt="Imagen de conexión emocional"
+            class="w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+
+      <!-- Sección raíz con fondo -->
+
+      <section class="w-full py-0 mx-auto bg-cover bg-center">
+        <!-- Capa blanca semitransparente -->
+        <section
+          class="relative  mx-auto bg-white/90 py-0 top-0 overflow-hidden"
+        >
+          <!-- SVG izquierda -->
+          <img
+            src="images/svg/left-deco-arrow.svg"
+            alt="Decoración izquierda"
+            class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
+          />
+
+          <!-- SVG derecha -->
+          <img
+            src="images/svg/right-deco-arrow.svg"
+            alt="Decoración derecha"
+            class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
+          />
+
+          <!-- Contenido principal -->
+          <div
+            class="relative z-10 max-w-4xl top-0 mx-auto rounded-xl md:p-6 text-center fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          >
+            <!-- <h2 class="font-title italic text-2xl text-[#336699] py-8">
             ¿Te sientes agobiado?
           </h2>
 
@@ -510,152 +510,176 @@
             Las situaciones de la vida —presiones laborales, relaciones tensas o
             inseguridades personales— a veces pueden volverse abrumadoras,
             creando una carga que parece imposible de manejar por uno mismo.
-          </p>
+          </p> -->
+            <p
+              class="text-gray-700 max-w-xl mx-auto w-[90%] py-12 md:py-24 md:text-xl"
+            >
+              En esos momentos en los que uno se siente completamente solo y se
+              niega a buscar ayuda por miedo —miedo a no ser comprendido,
+              entendido, juzgado o, en el peor de los casos, a que lo vean a uno
+              como <span class="font-bold text-[#336699]">“perdido”</span>—, uno
+              se queda allí, en esos días sin respuestas, donde los pensamientos
+              condenan y aniquilan. Llega la ansiedad, el insomnio... es
+              desconsolador, casi un infierno.
+            </p>
+            <p
+              class="text-gray-700 max-w-xl mx-auto w-[80%] md:py-24 md:text-xl"
+            >
+              Hablar con alguien que pueda
+              <span class="font-bold text-[#336699]">escuchar</span>, guiar y
+              entender se vuelve urgente, pero no cualquiera puede transitar ese
+              camino con uno. Pienso que la persona que esté allí para ello debe
+              ser capaz de llevarlo a desencarnar lo superficial, de llegar
+              justo a donde duele, y ayudarlo a sanar y aceptar, con empatía y
+              compasión.
+            </p>
 
+            <img
+              src="images/png/deco-overwhelmed.png"
+              alt="Imagen 1"
+              class="mx-auto my-16 max-w-xs size-[30%] md:size-[20%] md:py-16"
+            />
+
+            <h2
+              class="text-xl md:text-2xl font-title italic text-[#336699] py-8 w-[60%] mx-auto"
+            >
+              ¿Estás atravesando dificultades imprevistas?
+            </h2>
+
+            <img
+              src="images/svg/decor-element.svg"
+              alt="Ícono"
+              class="mx-auto w-36 h-2"
+            />
+
+            <p
+              class="text-gray-700 max-w-xl mx-auto w-[60%] py-12 md:py-12 md:w-[60%] md:text-xl"
+            >
+              La pérdida de empleo, los problemas de salud o las grandes
+              transiciones de vida pueden traer obstáculos inesperados. Estos
+              desafíos a menudo parecen insuperables cuando se enfrentan sin
+              apoyo.
+            </p>
+
+            <img
+              src="images/png/deco-unexp-setbacks.png"
+              alt="cascada de agua"
+              class="mx-auto mb-8 max-w-xs size-[30%] md:size-[20%]"
+            />
+          </div>
+        </section>
+
+        <section
+          class="relative w-full mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden"
+        >
+          <!-- SVG izquierda -->
           <img
-            src="images/png/deco-overwhelmed.png"
-            alt="Imagen 1"
-            class="mx-auto my-16 max-w-xs size-[30%] md:size-[20%] md:py-16"
+            src="images/svg/left-deco-arrow-2.svg"
+            alt="Decoración izquierda"
+            class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
           />
 
-          <h2
-            class="text-xl md:text-2xl font-title italic text-[#336699] py-8 w-[60%] mx-auto"
-          >
-            ¿Estás atravesando dificultades imprevistas?
-          </h2>
-
+          <!-- SVG derecha -->
           <img
-            src="images/svg/decor-element.svg"
-            alt="Ícono"
-            class="mx-auto w-36 h-2"
+            src="images/svg/right-deco-arrow-2.svg"
+            alt="Decoración derecha"
+            class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
           />
 
-          <p
-            class="text-gray-700 max-w-xl mx-auto w-[60%] py-12 md:py-12 md:w-[60%] md:text-xl"
+          <!-- Contenido principal -->
+          <div
+            class="relative z-10 max-w-4xl top-0 mx-auto rounded-xl md:p-6 text-center fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
           >
-            La pérdida de empleo, los problemas de salud o las grandes
-            transiciones de vida pueden traer obstáculos inesperados. Estos
-            desafíos a menudo parecen insuperables cuando se enfrentan sin
-            apoyo.
-          </p>
+            <h2
+              class="text-2xl font-title italic text-[#336699] py-8 fade-on-scroll"
+            >
+              ¿Has decidido buscar apoyo?
+            </h2>
 
+            <img
+              src="images/svg/decor-element.svg"
+              alt="Decorativo"
+              class="mx-auto w-36 h-2 fade-on-scroll"
+            />
+
+            <p
+              class="text-gray-700 max-w-xl mx-auto w-[60%] py-12 md:py-24 md:w-[40%] md:text-xlfade-on-scroll"
+            >
+              A veces existe un conflicto interno sobre si buscar ayuda para
+              resolver los problemas de la vida real. Este es un momento
+              crucial, un punto de inflexión.
+            </p>
+
+            <img
+              src="images/png/deco-find-help.png"
+              alt="Buscando ayuda"
+              class="mx-auto my-16 max-w-xs size-[40%] md:size-[30%] md:py-16 fade-on-scroll"
+            />
+
+            <h2
+              class="text-xl md:text-2xl font-title italic text-[#336699] py-8 w-[60%] mx-auto fade-on-scroll"
+            >
+              Encuentra el apoyo que necesitas en tu camino
+            </h2>
+
+            <img
+              src="images/svg/decor-element.svg"
+              alt="Ícono"
+              class="mx-auto w-36 h-2 fade-on-scroll"
+            />
+
+            <p
+              class="text-gray-700 max-w-xl mx-auto w-[80%] py-12 md:py-12 md:w-[80%] md:text-xl fade-on-scroll"
+            >
+              La consejería te ofrece un acompañamiento confiable en el camino
+              frente a los desafíos de la vida, brindando orientación y
+              comprensión cuando la ruta se vuelve incierta. Combinamos empatía
+              con perspectiva profesional para ayudarte a encontrar claridad,
+              fortaleza y una nueva dirección.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section class="py-4 bg-[#F8F4E3]">
+        <div
+          class="w-full max-w-[70%] mx-auto relative flex justify-center items-center bg-[#F8F4E3] fade-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
+        >
+          <!-- Imagen SVG de fondo -->
           <img
-            src="images/png/deco-unexp-setbacks.png"
-            alt="cascada de agua"
-            class="mx-auto mb-8 max-w-xs size-[30%] md:size-[20%]"
+            src="images/svg/sp2-hourglass.svg"
+            alt="Decoración central"
+            class="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto fade-on-scroll"
+          />
+
+          <!-- Imagen encima, centrada y alineada hacia la parte inferior -->
+          <img
+            src="images/png/new-horizon.png"
+            alt="Imagen nuevo horizonte"
+            class="absolute bottom-2 md:bottom-4 w-16 h-auto md:size-20 md:bottom-4 md:size-32 mx-auto z-10 max-w-[200px] fade-on-scroll"
           />
         </div>
       </section>
+
+      <!-- Seccion de servicios -->
 
       <section
-        class="relative md:w-[70%] lg:w-[70%] xl:w-[70%] mx-auto bg-white/90 py-0 top-0 px-4 overflow-hidden"
+        class="relative w-full mx-auto border bg-cover bg-center py-0"
+        style="
+          background-image: url('images/jpg/section-background.jpg');
+          width: 100%;
+        "
       >
-        <!-- SVG izquierda -->
-        <img
-          src="images/svg/left-deco-arrow-2.svg"
-          alt="Decoración izquierda"
-          class="absolute left-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
-        />
+        <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
+        <div class="h-[10px] mx-auto bg-[#E3BE03]/85 fade-on-scroll"></div>
 
-        <!-- SVG derecha -->
-        <img
-          src="images/svg/right-deco-arrow-2.svg"
-          alt="Decoración derecha"
-          class="absolute right-0 top-0 h-full max-w-[40%] md:max-w-xs object-contain z-0 pointer-events-none"
-        />
-
-        <!-- Contenido principal -->
+        <!-- Contenedor hijo 1 -->
+        <!-- Wrapper con fondo móvil -->
         <div
-          class="relative z-10 max-w-4xl top-0 mx-auto rounded-xl md:p-6 text-center fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll "
-        >
-          <h2 class="text-2xl font-title italic text-[#336699] py-8 fade-on-scroll">
-            ¿Has decidido buscar apoyo?
-          </h2>
-
-          <img
-            src="images/svg/decor-element.svg"
-            alt="Decorativo"
-            class="mx-auto w-36 h-2 fade-on-scroll"
-          />
-
-          <p
-            class="text-gray-700 max-w-xl mx-auto w-[60%] py-12 md:py-24 md:w-[40%] md:text-xlfade-on-scroll"
-          >
-            A veces existe un conflicto interno sobre si buscar ayuda para
-            resolver los problemas de la vida real. Este es un momento crucial,
-            un punto de inflexión.
-          </p>
-
-          <img
-            src="images/png/deco-find-help.png"
-            alt="Buscando ayuda"
-            class="mx-auto my-16 max-w-xs size-[40%] md:size-[30%] md:py-16 fade-on-scroll"
-          />
-
-          <h2
-            class="text-xl md:text-2xl font-title italic text-[#336699] py-8 w-[60%] mx-auto fade-on-scroll"
-          >
-            Encuentra el apoyo que necesitas en tu camino
-          </h2>
-
-          <img
-            src="images/svg/decor-element.svg"
-            alt="Ícono"
-            class="mx-auto w-36 h-2 fade-on-scroll"
-          />
-
-          <p
-            class="text-gray-700 max-w-xl mx-auto w-[80%] py-12 md:py-12 md:w-[80%] md:text-xl fade-on-scroll"
-          >
-            La consejería te ofrece un acompañamiento confiable en el camino
-            frente a los desafíos de la vida, brindando orientación y
-            comprensión cuando la ruta se vuelve incierta. Combinamos empatía
-            con perspectiva profesional para ayudarte a encontrar claridad,
-            fortaleza y una nueva dirección.
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section class="py-4 bg-[#F8F4E3]">
-      <div
-        class="w-full max-w-[70%] mx-auto relative flex justify-center items-center bg-[#F8F4E3] fade-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out"
-      >
-        <!-- Imagen SVG de fondo -->
-        <img
-          src="images/svg/sp2-hourglass.svg"
-          alt="Decoración central"
-          class="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto fade-on-scroll"
-        />
-
-        <!-- Imagen encima, centrada y alineada hacia la parte inferior -->
-        <img
-          src="images/png/new-horizon.png"
-          alt="Imagen nuevo horizonte"
-          class="absolute bottom-2 md:bottom-4 w-16 h-auto md:size-20 md:bottom-4 md:size-32 mx-auto z-10 max-w-[200px] fade-on-scroll"
-        />
-      </div>
-    </section>
-
-    <!-- Seccion de servicios -->
-
-    <section
-      class="relative w-full md:w-[70%] lg:w-[70%] xl:w-[70%] md:max-w-[80%] mx-auto border bg-cover bg-center py-0"
-      style="
-        background-image: url('images/jpg/section-background.jpg');
-        width: 95%;
-      "
-    >
-      <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-      <div class="h-[10px] mx-auto bg-[#E3BE03]/85 fade-on-scroll"></div>
-      <!-- Contenedor hijo 1 -->
-      <div class="w-full mx-auto">
-        <!-- Contenedor hijo1 con altura completa -->
-        <div
-          class="relative bg-no-repeat bg-cover text-white p-6 flex flex-col md:flex-row justify-between"
+          class="relative bg-no-repeat bg-cover"
           style="background-image: url('images/svg/mobile-bg-1.svg')"
         >
-          <!-- Fondo SVG para escritorio -->
+          <!-- Fondo para escritorio (oculto en móvil) -->
           <div
             class="hidden md:block absolute inset-0 bg-no-repeat bg-cover"
             style="
@@ -664,68 +688,58 @@
             "
           ></div>
 
-          <!-- Columna izquierda -->
-          <div
-            class="relative z-10 w-full md:w-2xl flex flex-col justify-start gap-4"
+          <!-- Sección con contenido encima del fondo -->
+          <section
+            class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 py-12 text-white"
           >
-            <!-- Título -->
-            <h1
-              class="text-2xl md:text-3xl font-semibold text-left md:text-left fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-            >
-              Terapia Individual
-            </h1>
-
-            <!-- Párrafo -->
-            <p
-              class="text-xl md:text-2xl text-left pt-2 md:text-left max-w-md fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-            >
-              Encuentra un espacio personal y seguro para explorar tus
-              pensamientos, emociones y experiencias de vida con apoyo y
-              comprensión.
-            </p>
-
-            <!-- Imagen solo en móvil -->
-            <img
-              src="images/png/terapiaIndMov.png"
-              alt="Imagen móvil Terapia Individual"
-              class="block md:hidden mx-auto"
-            />
-
-            <!-- Botón -->
-            <div class="text-left md:text-left pt-8 md:pt-8">
-              <a
-                href="#contact"
-                class="inline-block bg-[#E3BE03] text-[#336699] font-semibold px-5 py-2 rounded-full w-fit hover:bg-yellow-400 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-              >
-                Reserva una Cita
-              </a>
+            <!-- Columna 1 -->
+            <div class="flex flex-col justify-start gap-4">
+              <h1 class="text-2xl md:text-3xl font-semibold text-center">
+                Terapia Individual
+              </h1>
+              <p class="text-xl md:text-2xl pt-2 text-center w-full">
+                Encuentra un espacio personal y seguro para explorar tus
+                pensamientos, emociones y experiencias de vida con apoyo y
+                comprensión.
+              </p>
+              <!-- Imagen solo visible en móvil -->
+              <div class="block md:hidden mt-8">
+                <img
+                  src="images/png/terapiaIndMov.png"
+                  alt="Imagen móvil Terapia Individual"
+                  class="mx-auto w-2/3"
+                />
+              </div>
+              <div class="pt-8 flex justify-center">
+                <a
+                  href="#contact"
+                  class="inline-block bg-[#E3BE03] text-[#336699] font-semibold px-5 py-2 rounded-full w-fit hover:bg-yellow-400"
+                >
+                  Reserva una Cita
+                </a>
+              </div>
             </div>
-          </div>
 
-          <!-- Columna derecha decorativa -->
-          <div
-            class="relative z-10 w-full md:w-2xl md:flex md:items-center md:justify-end"
-          >
-            <!-- Imagen visible solo en escritorio -->
-            <img
-              src="images/png/terapiaIndMov.png"
-              alt="Imagen persona Terapia Individual"
-              class="hidden md:block w-[240px] h-[100px] md:w-[620px] md:h-[220px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-            />
-          </div>
+            <!-- Columna 2: Imagen solo para escritorio -->
+            <div class="hidden md:flex items-center justify-center">
+              <img
+                src="images/png/terapiaIndMov.png"
+                alt="Imagen Terapia Individual"
+                class="w-2/3 h-auto mx-auto"
+              />
+            </div>
+          </section>
         </div>
-      </div>
 
-      <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-      <div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
-      <!-- contenedor hijo 2 -->
-      <div class="w-full mx-auto">
-        <!-- Contenedor hijo2 con altura completa -->
+        <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
+        <div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
+        <!-- contenedor hijo 2 -->
+        <!-- Wrapper con fondo móvil -->
         <div
-          class="relative bg-no-repeat bg-cover text-white p-6 flex flex-col md:flex-row-reverse justify-between"
+          class="relative bg-no-repeat bg-cover"
           style="background-image: url('images/svg/mobile-bg-2.svg')"
         >
-          <!-- Fondo SVG para escritorio -->
+          <!-- Fondo para escritorio -->
           <div
             class="hidden md:block absolute inset-0 bg-no-repeat bg-cover"
             style="
@@ -734,270 +748,279 @@
             "
           ></div>
 
-          <!-- Columna izquierda -->
-          <div class="relative z-10 w-full flex flex-col justify-end gap-4">
-            <!-- Título -->
-            <h1
-              class="text-2xl md:text-3xl font-semibold text-right md:text-right fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out "
-            >
-              Terapia Familiar y Parejas
-            </h1>
-
-            <!-- Párrafo -->
-            <p
-              class="text-xl md:text-2xl text-right pt-2 md:text-right max-w-md ml-auto fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-            >
-              Creamos un espacio de diálogo y conexión donde las relaciones
-              pueden fortalecerse a través de la comunicación abierta, el
-              respeto mutuo y el entendimiento compartido.
-            </p>
-
-            <!-- Imagen solo en móvil -->
-            <img
-              src="images/png/terapiaFamMob.png"
-              alt="Imagen móvil Terapia Familiar"
-              class="block md:hidden mx-auto"
-            />
-
-            <!-- Botón -->
-            <div class="text-right md:text-right pt-8 md:pt-8">
-              <a
-                href="#contact"
-                class="inline-block bg-[#E3BE03] text-[#336699] font-semibold px-5 py-2 rounded-full w-fit hover:bg-yellow-400 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          <!-- Contenido con grid -->
+          <section
+            class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 py-12 text-white"
+          >
+            <!-- Columna 1: Texto alineado a la derecha -->
+            <div class="flex flex-col justify-end gap-4 text-right">
+              <!-- Título -->
+              <h1
+                class="text-2xl md:text-3xl text-center font-semibold md:pr-6 fade-in transition-all duration-700 ease-out z-10"
               >
-                Reserva una Cita
-              </a>
+                Terapia Familiar y Parejas
+              </h1>
+
+              <!-- Párrafo -->
+              <p
+                class="text-xl text-center md:text-2xl md:pr-6 pt-2 w-full fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+              >
+                Creamos un espacio de diálogo y conexión donde las relaciones
+                pueden fortalecerse a través de la comunicación abierta, el
+                respeto mutuo y el entendimiento compartido.
+              </p>
+
+              <!-- Imagen solo en móvil -->
+              <div class="block md:hidden mt-8">
+                <img
+                  src="images/png/terapiaFamMob.png"
+                  alt="Imagen móvil Terapia Familiar"
+                  class="mx-auto w-2/3"
+                />
+              </div>
+
+              <!-- Botón -->
+              <div class="pt-8 flex justify-center">
+                <a
+                  href="#contact"
+                  class="inline-block bg-[#E3BE03] text-[#336699] font-semibold px-5 py-2 rounded-full w-fit hover:bg-yellow-400 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+                >
+                  Reserva una Cita
+                </a>
+              </div>
+            </div>
+
+            <!-- Columna 2: Imagen (solo en escritorio) -->
+            <div class="md:flex items-center justify-end">
+              <img
+                src="images/png/terapiaFamMob.png"
+                alt="Imagen persona Terapia Individual"
+                class="hidden md:block w-2/3 h-auto mx-auto opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+              />
+            </div>
+          </section>
+        </div>
+
+        <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
+        <div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
+
+        <!-- Contenedor hijo 3 -->
+        <!-- Wrapper hijo 3 -->
+        <div class="w-full mx-auto">
+          <!-- Fondo móvil -->
+          <div
+            class="relative bg-no-repeat bg-cover text-white p-6 flex flex-col md:flex-row justify-between"
+            style="background-image: url('images/svg/mobile-bg-1.svg')"
+          >
+            <!-- Fondo para escritorio -->
+            <div
+              class="hidden md:block absolute inset-0 bg-no-repeat bg-cover"
+              style="
+                background-image: url('images/svg/desktop-bg-1.svg');
+                z-index: 0;
+              "
+            ></div>
+
+            <!-- Columna izquierda -->
+            <div
+              class="relative z-10 w-full flex flex-col justify-start gap-4 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+            >
+              <!-- Título -->
+              <h1
+                class="text-2xl md:text-3xl font-semibold text-center fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+              >
+                Terapia de Autodescubrimiento
+              </h1>
+
+              <!-- Párrafo (ancho completo) -->
+              <p
+                class="text-xl md:text-2xl pt-2 w-full text-center fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+              >
+                Este es un proceso íntimo y transformador para reconectar con su
+                esencia, desde la compasión, la curiosidad y una apertura
+                genuina.
+              </p>
+
+              <!-- Imagen móvil -->
+              <div class="block md:hidden mt-8">
+                <img
+                  src="images/png/terapiaAutoMov.png"
+                  alt="Imagen móvil Terapia Autodescubrimiento"
+                  class="mx-auto w-2/3"
+                />
+              </div>
+
+              <!-- Botón centrado -->
+              <div class="pt-16 md:pt-8 flex justify-center">
+                <a
+                  href="#contact"
+                  class="inline-block bg-[#E3BE03] text-[#336699] font-semibold px-5 py-2 rounded-full w-fit hover:bg-yellow-400 transition fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+                >
+                  Reserva una Cita
+                </a>
+              </div>
+            </div>
+
+            <!-- Columna derecha (imagen decorativa escritorio) -->
+            <div
+              class="relative z-10 w-full md:w-2xl md:flex md:items-center md:justify-end"
+            >
+              <img
+                src="images/png/terapiaAutoMov.png"
+                alt="Imagen persona Terapia Autodescubrimiento"
+                class="hidden md:block  w-2/3 h-auto mx-auto fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+              />
             </div>
           </div>
-
-          <!-- Columna Izquierda decorativa  -->
-          <div
-            class="relative z-10 w-full md:w-2xl md:flex md:items-center md:justify-end"
-          >
-            <img
-              src="images/png/terapiaFamMob.png"
-              alt="Imagen persona Terapia Individual "
-              class="hidden md:block left-0 w-[240px] h-[100px] md:w-[620px] md:h-[220px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-            />
-          </div>
         </div>
-      </div>
 
-      <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-      <div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
+        <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
+        <div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
+      </section>
 
-      <!-- Contenedor hijo 3 -->
-      <div class="w-full mx-auto">
-        <!-- Contenedor hijo3 con altura completa -->
-        <div
-          class="relative bg-no-repeat bg-cover text-white p-6 flex flex-col md:flex-row justify-between"
-          style="background-image: url('images/svg/mobile-bg-1.svg')"
+      <!-- ****** -->
+      <section
+        class="w-full md:w-4/5 lg:w-4/5 xl:w-4/5 mx-auto py-16 px-4 bg-[#F8F4E3]"
+      >
+        <!-- Título -->
+        <h1
+          class="text-3xl md:text-4xl font-bold text-center text-[#336699] mb-8 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
         >
-          <!-- Fondo SVG para escritorio -->
-          <div
-            class="hidden md:block absolute inset-0 bg-no-repeat bg-cover"
-            style="
-              background-image: url('images/svg/desktop-bg-1.svg');
-              z-index: 0;
-            "
-          ></div>
+          Nuestro Equipo
+        </h1>
 
-          <!-- Columna izquierda -->
-          <div
-            class="relative z-10 w-full md:w-2xl flex flex-col justify-start gap-4 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-          >
-            <!-- Título -->
-            <h1
-              class="text-2xl md:text-3xl font-semibold text-left md:text-left fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-            >
-              Terapia de Autodescubrimiento
-            </h1>
-
-            <!-- Párrafo -->
-            <p class="text-xl md:text-2xl text-left pt-2 md:text-left max-w-md">
-              Este es un proceso íntimo y transformador para reconectar con su
-              esencia, desde la compasión, la curiosidad y una apertura genuina.
-            </p>
-
-            <!-- Imagen solo en móvil -->
-            <img
-              src="images/png/terapiaAutoMov.png"
-              alt="Imagen móvil Terapia Autodescubrimiento"
-              class="block md:hidden mx-auto"
-            />
-
-            <!-- Botón -->
-            <div class="text-left md:text-left pt-16 md:pt-8">
-              <a
-                href="#contact"
-                class="inline-block bg-[#E3BE03] text-[#336699] font-semibold px-5 py-2 rounded-full w-fit hover:bg-yellow-400 transition fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-              >
-                Reserva una Cita
-              </a>
-            </div>
-          </div>
-
-          <!-- Columna derecha vacía o decorativa si lo deseas -->
-          <div
-            class="relative z-10 w-full md:w-2xl md:flex md:items-center md:justify-end"
-          >
-            <!-- Imagen decorativa visible solo en escritorio -->
-            <img
-              src="images/png/terapiaAutoMov.png"
-              alt="Imagen persona Terapia Autodescubrimiento "
-              class="hidden md:block right-0 w-[240px] h-[100px] md:w-[620px] md:h-[220px] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-            />
-          </div>
+        <!-- Imagen centrada -->
+        <div
+          class="flex justify-center mb-6 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        >
+          <img
+            src="images/jpg/TeamBW.jpg"
+            alt="Equipo terapéutico"
+            class="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] h-auto rounded-xl shadow-md fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          />
         </div>
-      </div>
 
-      <!-- Línea decorativa (puede colocarse antes o después del contenido del hijo) -->
-      <div class="h-[10px] mx-auto bg-[#E3BE03]/85"></div>
-    </section>
+        <!-- Párrafo explicativo -->
+        <p
+          class="text-center text-lg md:text-xl text-[#336699] max-w-2xl mx-auto mb-8 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        >
+          Conoce al gran equipo de terapeutas que están transformando vidas en
+          EaBuenCamino con profesionalismo, calidez y vocación auténtica.
+        </p>
 
-    <!-- ****** -->
-    <section
-      class="w-full md:w-4/5 lg:w-4/5 xl:w-4/5 mx-auto py-16 px-4 bg-[#F8F4E3]"
-    >
-      <!-- Título -->
-      <h1
-        class="text-3xl md:text-4xl font-bold text-center text-[#336699] mb-8 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-      >
-        Nuestro Equipo
-      </h1>
+        <!-- Botón CTA -->
+        <div
+          class="text-center opacity-0 translate-y-4 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        >
+          <a
+            href="team.html"
+            class="inline-block bg-[#E3BE03] text-[#336699] font-semibold text-sm md:text-base px-6 py-3 rounded-full hover:bg-yellow-400 transition whitespace-nowrap"
+          >
+            Ver equipo completo
+          </a>
+        </div>
+      </section>
 
-      <!-- Imagen centrada -->
-      <div
-        class="flex justify-center mb-6 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-      >
+      <section class="relative w-full bg-[#E3BE03] py-20 overflow-hidden">
+        <!-- Imagen izquierda centrada verticalmente -->
         <img
-          src="images/jpg/TeamBW.jpg"
-          alt="Equipo terapéutico"
-          class="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] h-auto rounded-xl shadow-md fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+          src="images/svg/left-deco.svg"
+          alt="Decoración izquierda"
+          class="absolute left-0 top-1/6 md:top-1/2 -translate-y-1/2 z-0 w-14 md:w-20 pointer-events-none"
         />
-      </div>
 
-      <!-- Párrafo explicativo -->
-      <p
-        class="text-center text-lg md:text-xl text-[#336699] max-w-2xl mx-auto mb-8 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-      >
-        Conoce al gran equipo de terapeutas que están transformando vidas en
-        EaBuenCamino con profesionalismo, calidez y vocación auténtica.
-      </p>
+        <!-- Imagen derecha alineada al fondo -->
+        <img
+          src="images/svg/right-deco.svg"
+          alt="Decoración derecha"
+          class="absolute right-0 bottom-0 z-0 w-20 md:w-32 pointer-events-none"
+        />
 
-      <!-- Botón CTA -->
-      <div
-        class="text-center opacity-0 translate-y-4 fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
+        <!-- NUEVA ESTRUCTURA DE CONTACTO -->
+        <div
+          class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-stretch gap-4 md:gap-0 mb-12"
+        >
+          <!-- Columna izquierda: "Contacto" -->
+          <div
+            class="flex items-center justify-center h-2 md:h-auto md:w-2/4 text-[#336699] text-2xl md:text-4xl font-semibold"
+          >
+            Contacto
+          </div>
+
+          <!-- Separador azul -->
+
+          <!-- Columna derecha: información de contacto -->
+          <div
+            class="flex flex-col justify-center w-full md:border-[#336699]/80 md:border-l-8 md:w-2/4 text-[#336699] font-medium"
+          >
+            <!-- Teléfono -->
+            <div
+              class="flex items-center justify-center md:pl-6 md:justify-start h-20 border-b border-[#336699]/80 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out"
+            >
+              <img
+                src="images/png/telefono.png"
+                alt="Teléfono"
+                class="w-6 h-6 md:w-7 md:h-7 mr-2"
+              />
+              <span>(+1) 505-600-1586</span>
+            </div>
+
+            <!-- Correo -->
+            <div
+              class="flex items-center justify-center md:pl-6 md:justify-start h-20 border-b border-[#336699]/80 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out"
+            >
+              <img
+                src="images/png/correo.png"
+                alt="Correo"
+                class="w-8 h-6 md:w-9 md:h-7 mr-2"
+              />
+              <span>hello@eabuencamino.com</span>
+            </div>
+
+            <!-- Dirección -->
+            <div
+              class="flex items-center justify-center md:pl-6 md:justify-start h-20 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out"
+            >
+              <img
+                src="images/png/direccion.png"
+                alt="Dirección"
+                class="w-6 h-9 md:w-7 md:h-10 mr-2"
+              />
+              <span class="text-center md:text-left">
+                3539 THAXTON AVE SE -
+                <br class="block md:hidden" />
+                87106, Albuquerque, NM
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero Section  -->
+      <section
+        class="text-center py-16 px-4 bg-gradient-to-r from-[#E3BE03] to-[#336699] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
       >
+        <h1 class="text-4xl font-bold text-[#F8F4E3] mb-4">
+          Listo Para Un Cambio?
+        </h1>
+        <p class="text-lg text-[#F8F4E3] mb-6">
+          Cambiar la perspectiva de la vida para encontrar el equilibrio
+        </p>
         <a
-          href="team.html"
-          class="inline-block bg-[#E3BE03] text-[#336699] font-semibold text-sm md:text-base px-6 py-3 rounded-full hover:bg-yellow-400 transition whitespace-nowrap"
+          href="#contact"
+          class="bg-[#336699]/80 text-[#F8F4E3] px-6 py-3 rounded-xl hover:bg-[#E3BE03] hover:text-[#336699] transition"
         >
-          Ver equipo completo
+          Reserva Consulta Gratis
         </a>
-      </div>
-    </section>
+      </section>
 
-    <section class="relative w-full bg-[#E3BE03] py-20 overflow-hidden">
-      <!-- Imagen izquierda centrada verticalmente -->
-      <img
-        src="images/svg/left-deco.svg"
-        alt="Decoración izquierda"
-        class="absolute left-0 top-1/6 md:top-1/2 -translate-y-1/2 z-0 w-14 md:w-20 pointer-events-none"
-      />
-
-      <!-- Imagen derecha alineada al fondo -->
-      <img
-        src="images/svg/right-deco.svg"
-        alt="Decoración derecha"
-        class="absolute right-0 bottom-0 z-0 w-20 md:w-32 pointer-events-none"
-      />
-
-      <!-- NUEVA ESTRUCTURA DE CONTACTO -->
-      <div
-        class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-stretch gap-4 md:gap-0 mb-12"
+      <!-- Pie de pagina... -->
+      <footer
+        class="bg-[#336699] text-white text-center py-4 border-t border-[#F8F4E3]/80"
       >
-        <!-- Columna izquierda: "Contacto" -->
-        <div
-          class="flex items-center justify-center h-2 md:h-auto md:w-2/4 text-[#336699] text-2xl md:text-4xl font-semibold"
-        >
-          Contacto
-        </div>
-
-        <!-- Separador azul -->
-
-        <!-- Columna derecha: información de contacto -->
-        <div
-          class="flex flex-col justify-center w-full md:border-[#336699]/80 md:border-l-8 md:w-2/4 text-[#336699] font-medium"
-        >
-          <!-- Teléfono -->
-          <div
-            class="flex items-center justify-center md:pl-6 md:justify-start h-20 border-b border-[#336699]/80 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out"
-          >
-            <img
-              src="images/png/telefono.png"
-              alt="Teléfono"
-              class="w-6 h-6 md:w-7 md:h-7 mr-2"
-            />
-            <span>(+1) 505-600-1586</span>
-          </div>
-
-          <!-- Correo -->
-          <div
-            class="flex items-center justify-center md:pl-6 md:justify-start h-20 border-b border-[#336699]/80 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out"
-          >
-            <img
-              src="images/png/correo.png"
-              alt="Correo"
-              class="w-8 h-6 md:w-9 md:h-7 mr-2"
-            />
-            <span>hello@eabuencamino.com</span>
-          </div>
-
-          <!-- Dirección -->
-          <div
-            class="flex items-center justify-center md:pl-6 md:justify-start h-20 fade-on-scroll opacity-0 translate-y-4 transition-all duration-700 ease-out"
-          >
-            <img
-              src="images/png/direccion.png"
-              alt="Dirección"
-              class="w-6 h-9 md:w-7 md:h-10 mr-2"
-            />
-            <span class="text-center md:text-left">
-              3539 THAXTON AVE SE -
-              <br class="block md:hidden" />
-              87106, Albuquerque, NM
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hero Section  -->
-    <section
-      class="text-center py-16 px-4 bg-gradient-to-r from-[#E3BE03] to-[#336699] fade-in opacity-0 translate-y-4 transition-all duration-700 ease-out fade-on-scroll"
-    >
-      <h1 class="text-4xl font-bold text-[#F8F4E3] mb-4">
-        Listo Para Un Cambio?
-      </h1>
-      <p class="text-lg text-[#F8F4E3] mb-6">
-        Cambiar la perspectiva de la vida para encontrar el equilibrio
-      </p>
-      <a
-        href="#contact"
-        class="bg-[#336699]/80 text-[#F8F4E3] px-6 py-3 rounded-xl hover:bg-[#E3BE03] hover:text-[#336699] transition"
-      >
-        Reserva Consulta Gratis
-      </a>
-    </section>
-
-    <!-- Pie de pagina... -->
-    <footer
-      class="bg-[#336699] text-white text-center py-4 border-t border-[#F8F4E3]/80"
-    >
-      <p class="text-sm md:text-base font-medium">EaBuenCamino - 2025</p>
-    </footer>
-
+        <p class="text-sm md:text-base font-medium">EaBuenCamino - 2025</p>
+      </footer>
+    </div>
     <!-- JS -->
     <script src="js/main.js"></script>
   </body>
